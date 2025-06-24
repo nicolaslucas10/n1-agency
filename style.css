@@ -410,6 +410,21 @@ main {
   }
 }
 
+@media (max-width: 768px) {
+   .titulo-atuacao {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.subtitulo-atuacao {
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  color: #d49263;
+}
+  }
+
 
 .card-item {
   background: rgba(255, 255, 255, 0.1); /* fundo translúcido */
