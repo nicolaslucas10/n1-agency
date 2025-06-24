@@ -435,7 +435,7 @@ main {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   text-align: center;
-  border: 2px solid #d49263;
+  border-top: 5px solid #d49263;
 }
 
 .card-item:hover {
