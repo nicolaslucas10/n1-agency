@@ -10,12 +10,12 @@
 body {
       font-family: 'Rajdhani', sans-serif;
       color: white;
-      background: linear-gradient(to right, #0a0a0a, #1a0f27, #240b4a);
+      background: linear-gradient(to right,  #181818 , #282036, #6b2fc8,#d49263);
       overflow-x: hidden;
     }
 
 header {
-  background: linear-gradient(to right, #0a0a0a, #1a0f27, #240b4a);
+  background: linear-gradient(to right,  #181818 , #282036, #6b2fc8,#d49263 );
   padding: 1rem 2rem;
   position: fixed;
   width: 100%;
@@ -31,15 +31,15 @@ header {
   margin: 0 auto;
 }
 
-.logo-text {
-  font-size: 1.4rem;
-  font-weight: bold;
-  line-height: 1.2;
-  color: white;
+.logo img {
+  height: 26px; /* ajuste conforme necessário */
+  width: auto;
+  display: block;
 }
 
+
 .underscore {
-  color: #9b59ff;
+  color: #6b2fc8 ;
   font-size: 1.8rem;
   position: relative;
   top: -5px;
@@ -48,7 +48,7 @@ header {
 /* BOTÃO WHATSAPP */
 .whatsapp-btn {
   color: white;
-  border: 1px solid #9b59ff;
+  border: 1px solid  #6b2fc8  ;
   padding: 0.6rem 1.5rem;
   border-radius: 30px;
   font-weight: bold;
@@ -58,7 +58,7 @@ header {
 }
 
 .whatsapp-btn:hover {
-  background: #9b59ff32;
+  background: #d49263b4;
 }
 
 /* MENU HAMBÚRGUER */
@@ -120,7 +120,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  border-bottom: 1px solid #9b59ff;
+  border-bottom: 1px solid #d49263;
 }
 
 /* MAIN */
@@ -159,7 +159,7 @@ main {
     }
 
     #h101{
-    color: #8e2de2;
+    color: #d49263;
     }
 
     .hero-content {
@@ -190,7 +190,7 @@ main {
     .hero .cta-btn {
       padding: 1rem 2.5rem;
       border-radius: 50px;
-      background: linear-gradient(to right, #8e2de2, #4a00e0);
+      background: #6b2fc8 ;
       border: none;
       color: white;
       font-size: 1.1rem;
@@ -203,7 +203,7 @@ main {
 
     .hero .cta-btn:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 20px #9b59ff;
+      box-shadow: 0 0 20px #6b2fc8  ;
     }
 
     @keyframes fadeIn {
