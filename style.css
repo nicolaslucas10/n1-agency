@@ -10,12 +10,12 @@
 body {
       font-family: 'Rajdhani', sans-serif;
       color: white;
-      background: linear-gradient(to right,  #181818 , #282036, #6b2fc8,#d49263);
+      background: linear-gradient(to right,  #181818 , #282036, #6b2fc8);
       overflow-x: hidden;
     }
 
 header {
-  background: linear-gradient(to right,  #181818 , #282036, #6b2fc8,#d49263 );
+  background: linear-gradient(to right,  #181818 , #282036, #6b2fc8 );
   padding: 1rem 2rem;
   position: fixed;
   width: 100%;
