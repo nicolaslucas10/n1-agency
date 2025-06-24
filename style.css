@@ -398,6 +398,18 @@ main {
   gap: 2rem;
 }
 
+@media (max-width: 992px) {
+  .cards-atuacao {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .cards-atuacao {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 .card-item {
   background: rgba(255, 255, 255, 0.1); /* fundo translúcido */
