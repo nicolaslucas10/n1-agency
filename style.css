@@ -48,7 +48,7 @@ header {
 /* BOTÃO WHATSAPP COM ESTILO E ANIMAÇÃO */
 .whatsapp-btn {
   color: white;
-  background: linear-gradient(90deg, #6b2fc8, #8b4ce0);
+  background: linear-gradient(90deg, #8b4ce0, #8b4ce0);
   border: none;
   padding: 0.7rem 1.8rem;
   border-radius: 50px;
@@ -212,7 +212,7 @@ main {
     .hero .cta-btn {
   padding: 1rem 2.5rem;
   border-radius: 50px;
-  background: linear-gradient(270deg, #d49263, #d492637d, #d49263cb, #d49263, #d492637d, #d49263cb,#d49263, #d492637d, #d49263cb);
+  background: linear-gradient(270deg, #8b4ce0, #d492637d, #d49263cb, #8b4ce0, #d492637d, #8b4ce0,#d49263, #d492637d, #8b4ce0);
   background-size: 600% 600%;
   border: none;
   color: white;
@@ -308,11 +308,11 @@ main {
 
 .n1-box p {
   font-size: 1.2rem;
-  color: #d49263;
+  color: #8b4ce0;
 }
 
 .n1-color {
-  color: #d49263;
+  color: #8b4ce0;
 }
 
 .animado {
@@ -389,7 +389,7 @@ main {
 .subtitulo-atuacao {
   font-size: 1.2rem;
   margin-bottom: 3rem;
-  color: #d49263;
+  color: #8b4ce0;
 }
 
 .cards-atuacao {
@@ -421,7 +421,7 @@ main {
 .subtitulo-atuacao {
   font-size: 1rem;
   margin-bottom: 3rem;
-  color: #d49263;
+  color: #8b4ce0;
 }
   }
 
