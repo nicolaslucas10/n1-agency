@@ -60,6 +60,14 @@
     </div>
   </section>
 
+<section class="sessao-n1" id="sessao-n1">
+  <div class="n1-box animar">
+    <h1>Chega de conteúdo vazio</h1>
+    <h2>Na <span class="n1-color">SEJA N1</span>, a gente joga em outro nível:</h2>
+    <h3>Construímos autoridade, posicionamos sua marca e geramos vendas reais.</h3>
+    <p>Sem enrolação. Com estratégia. Com resultado.</p>
+  </div>
+</section>
 
 
 <script>
@@ -73,13 +81,32 @@ toggle.addEventListener('click', () => {
 </script>
 
 <script>
-    // Animação JavaScript extra (após carregamento total)
-    window.addEventListener("load", () => {
-      document.querySelector(".cta-btn").addEventListener("click", () => {
-        alert("Entraremos em contato em breve!");
-      });
+  // Animação JavaScript extra (após carregamento total)
+  window.addEventListener("load", () => {
+    document.querySelector(".cta-btn").addEventListener("click", () => {
+      alert("Entraremos em contato em breve!");
     });
-  </script>
+  });
+</script>
+
+
+<script>
+  // Anima ao rolar
+  function animarAoScroll() {
+    const elemento = document.querySelector('.animar');
+    const topo = elemento.getBoundingClientRect().top;
+    const janela = window.innerHeight;
+
+    if (topo < janela * 0.85) {
+      elemento.classList.add('animado');
+    }
+  }
+
+  window.addEventListener('scroll', animarAoScroll);
+  window.addEventListener('load', animarAoScroll);
+</script>
+
+
 
 </body>
 </html>

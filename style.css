@@ -188,18 +188,26 @@ main {
     }
 
     .hero .cta-btn {
-      padding: 1rem 2.5rem;
-      border-radius: 50px;
-      background: linear-gradient(to right, #6c2fc8a0, #6c2fc834,#6c2fc8a0);
-      border: none;
-      color: white;
-      font-size: 1.1rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      animation: fadeIn 1s ease forwards 0.8s;
-      opacity: 0;
-    }
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #6c2fc8, #b13de2, #6c2fc8);
+  background-size: 600% 600%;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: backgroundFlow 6s ease infinite, fadeIn 1s ease forwards 0.8s;
+  opacity: 0;
+}
+
+@keyframes backgroundFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
     .hero .cta-btn:hover {
       transform: scale(1.05);
@@ -228,3 +236,64 @@ main {
         font-size: 0.9rem;
       }
     }
+
+
+/* sessão n1 */
+
+    .sessao-n1 {
+  position: relative;
+  padding: 120px 20px 60px;
+  z-index: 1;
+}
+
+.n1-box {
+  background: rgba(255, 255, 255, 0.1); /* fundo translúcido */
+  backdrop-filter: blur(20px); /* desfoque */
+  -webkit-backdrop-filter: blur(20px); /* suporte no Safari */
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  padding: 3rem 2rem;
+  max-width: 960px;
+  margin: -160px auto 0 auto;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* opcional: borda leve */
+}
+
+
+.n1-box h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.n1-box h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #ffffff;
+}
+
+.n1-box h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.n1-box p {
+  font-size: 1rem;
+  color: #d49263;
+}
+
+.n1-color {
+  color: #d49263;
+}
+
+.animado {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
