@@ -318,3 +318,41 @@ main {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
+
+@media (max-width: 768px) {
+     .n1-box h1 {
+  font-size: 2.2rem;
+  font-weight:650;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.n1-box h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #ffffff;
+}
+
+.n1-box h3 {
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.n1-box p {
+  font-size: 1rem;
+  color: #d49263;
+}
+
+.n1-color {
+  color: #d49263;
+}
+
+.animado {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+  }
+
