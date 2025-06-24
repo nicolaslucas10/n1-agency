@@ -45,21 +45,42 @@ header {
   top: -5px;
 }
 
-/* BOTÃO WHATSAPP */
+/* BOTÃO WHATSAPP COM ESTILO E ANIMAÇÃO */
 .whatsapp-btn {
   color: white;
-  border: 1px solid  #6b2fc8  ;
-  padding: 0.6rem 1.5rem;
-  border-radius: 30px;
+  background: linear-gradient(90deg, #6b2fc8, #8b4ce0);
+  border: none;
+  padding: 0.7rem 1.8rem;
+  border-radius: 50px;
   font-weight: bold;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  box-shadow: 0 0 0px #8b4ce0;
   transition: all 0.3s ease;
-  white-space: nowrap;
+  animation: pulseGlow 2s infinite;
 }
 
 .whatsapp-btn:hover {
-  background: #6c2fc84f;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #8b4ce0;
 }
+
+/* Animação de brilho pulsante */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0px #8b4ce0;
+  }
+  50% {
+    box-shadow: 0 0 12px #8b4ce0;
+  }
+  100% {
+    box-shadow: 0 0 0px #8b4ce0;
+  }
+}
+
 
 /* MENU HAMBÚRGUER */
 .menu-button {

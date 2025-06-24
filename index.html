@@ -54,7 +54,7 @@
 
  <section class="hero">
     <div class="hero-content">
-      <h1>Transformamos autoridade em resultados.<br><spam id="h101">Estratégia, posicionamento</spam> e <spam id="h101">conversão</spam> para quem quer crescer de verdade.</h1>
+      <h1>Transformamos autoridade em resultados.<br><spam id="h101">Estratégia, posicionamento e</spam>  <spam id="h101">conversão</spam> para quem quer crescer de verdade.</h1>
       <p>Marque sua sessão estratégica gratuita e descubra como dobrar seus resultados com <spam id="h101">inteligência</spam>.</p>
       <button class="cta-btn">QUERO SER O NÚMERO 1</button>
     </div>
@@ -106,6 +106,18 @@ toggle.addEventListener('click', () => {
   window.addEventListener('load', animarAoScroll);
 </script>
 
+<script>
+  const btn = document.querySelector('.whatsapp-btn');
+  setInterval(() => {
+    btn.classList.toggle('piscar');
+  }, 1500);
+</script>
+
+<style>
+  .whatsapp-btn.piscar {
+    opacity: 0.6;
+  }
+</style>
 
 
 </body>
