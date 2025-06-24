@@ -281,7 +281,7 @@ main {
   opacity: 0;
   transform: translateY(40px);
   transition: 0.6s ease;
-  border: 2px solid #d49263;
+  border-top: 5px solid #d49263;
 }
 
 
