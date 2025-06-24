@@ -288,15 +288,15 @@ main {
 .sessao-n1 h1 {
   font-size: 3rem;
   font-weight: 700;
-  color: #ffffff;
+  color: white;
   text-align: center;
-  margin-bottom: 10rem;
+  margin-bottom: 2rem;
   position: relative;
   z-index: 2;
 }
 
 .n1-box {
-  margin: -100px auto 0 auto; /* era -160px */
+  margin: px auto 0 auto; /* era -160px */
 }
 
 
@@ -330,7 +330,7 @@ main {
 
 @media (max-width: 768px) {
      .sessao-n1 h1 {
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   font-weight:650;
   color: white;
   margin-bottom: 1rem;
@@ -389,7 +389,7 @@ main {
 
 .titulo-atuacao {
   font-size: 2.8rem;
-  font-weight: 600;
+  font-weight: 800;
   color: #ffffff;
   margin-bottom: 1rem;
 }
