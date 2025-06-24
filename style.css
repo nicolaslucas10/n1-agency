@@ -190,7 +190,7 @@ main {
     .hero .cta-btn {
   padding: 1rem 2.5rem;
   border-radius: 50px;
-  background: linear-gradient(270deg, #6c2fc8, #b13de2, #6c2fc8);
+  background: linear-gradient(270deg, #d49263, #d492637d, #d49263cb, #d49263, #d492637d, #d49263cb,#d49263, #d492637d, #d49263cb);
   background-size: 600% 600%;
   border: none;
   color: white;
@@ -211,7 +211,7 @@ main {
 
     .hero .cta-btn:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 20px #6b2fc8  ;
+      box-shadow: 0 0 20px #d49263 ;
     }
 
     @keyframes fadeIn {
@@ -264,28 +264,28 @@ main {
 
 
 .n1-box h1 {
-  font-size: 2.2rem;
-  font-weight: 800;
+  font-size: 3rem;
+  font-weight:650;
   color: white;
   margin-bottom: 1rem;
 }
 
 .n1-box h2 {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 0.8rem;
   color: #ffffff;
 }
 
 .n1-box h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #ffffff;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
 
 .n1-box p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #d49263;
 }
 
