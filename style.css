@@ -285,23 +285,31 @@ main {
 }
 
 
-.n1-box h1 {
+.sessao-n1 h1 {
   font-size: 3rem;
-  font-weight:650;
-  color: white;
-  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10rem;
+  position: relative;
+  z-index: 2;
 }
+
+.n1-box {
+  margin: -100px auto 0 auto; /* era -160px */
+}
+
 
 .n1-box h2 {
   font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 0.8rem;
-  color: #ffffff;
+  color: #8b4ce0;
 }
 
 .n1-box h3 {
   font-size: 1.3rem;
-  color: #ffffff;
+  color: #d49263;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
@@ -312,7 +320,7 @@ main {
 }
 
 .n1-color {
-  color: #8b4ce0;
+  color: #ffffff;
 }
 
 .animado {
@@ -321,7 +329,7 @@ main {
 }
 
 @media (max-width: 768px) {
-     .n1-box h1 {
+     .sessao-n1 h1 {
   font-size: 2.2rem;
   font-weight:650;
   color: white;
@@ -332,12 +340,12 @@ main {
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 0.8rem;
-  color: #ffffff;
+  color: #8b4ce0;
 }
 
 .n1-box h3 {
   font-size: 1.1rem;
-  color: #ffffff;
+  color: #d49263;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
@@ -348,7 +356,7 @@ main {
 }
 
 .n1-color {
-  color: #8b4ce0;
+  color: white;
 }
 
 .animado {
@@ -381,7 +389,7 @@ main {
 
 .titulo-atuacao {
   font-size: 2.8rem;
-  font-weight: 800;
+  font-weight: ;
   color: #ffffff;
   margin-bottom: 1rem;
 }
