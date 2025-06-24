@@ -186,6 +186,7 @@ main {
     .hero-content {
       max-width: 900px;
       animation: fadeIn 1s ease-in-out forwards;
+      
     }
 
     .hero h1 {
@@ -273,14 +274,14 @@ main {
   -webkit-backdrop-filter: blur(20px); /* suporte no Safari */
   border-radius: 1.5rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-  padding: 3rem 2rem;
+  padding: 2.5rem 2rem;
   max-width: 960px;
   margin: -160px auto 0 auto;
   text-align: center;
   opacity: 0;
   transform: translateY(40px);
   transition: 0.6s ease;
-  border: 1px solid rgba(255, 255, 255, 0.2); /* opcional: borda leve */
+  border: 2px solid #d49263;
 }
 
 
@@ -359,7 +360,7 @@ main {
 /* atuação */
 
  .atuacao-section {
-  padding: 100px 30px;
+  padding: 10px 30px;
   position: relative;
   overflow: hidden;
 }
@@ -398,13 +399,15 @@ main {
 }
 
 .card-item {
-  background: white;
+  background: rgba(255, 255, 255, 0.1); /* fundo translúcido */
+  backdrop-filter: blur(20px); /* desfoque */
+  -webkit-backdrop-filter: blur(20px); /* suporte no Safari */
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   text-align: center;
-  border-top: 5px solid #6c2fc8;
+  border: 2px solid #d49263;
 }
 
 .card-item:hover {
@@ -421,12 +424,12 @@ main {
 .card-item h3 {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #222;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
 .card-item p {
   font-size: 0.95rem;
-  color: #444;
+  color: #d49263;
 }
 
