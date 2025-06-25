@@ -644,3 +644,86 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
 }
 
 
+/* mosaico */
+
+.metodo-exclusivo {
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+}
+
+.titulo-metodo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #8b4ce0, #d49263);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+}
+
+.mosaico-expandido {
+  display: flex;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 20px;
+  width: 50vw;
+  margin: 0 auto 30px auto;
+}
+
+
+.mosaico-item {
+  flex: 1;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: flex 0.5s ease;
+  filter: grayscale(1) brightness(0.4);
+  cursor: pointer;
+}
+
+.mosaico-item:hover {
+  flex: 2;
+  filter: grayscale(0) brightness(1);
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  text-shadow: 2px 2px 2px  black;
+}
+
+.mosaico-item:hover .overlay-text {
+  opacity: 1;
+}
+
+.texto-metodo {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5px 20px;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+.mosaico-expandido {
+  display: flex;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 20px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-bottom: 30px;
+}
+
+}
+

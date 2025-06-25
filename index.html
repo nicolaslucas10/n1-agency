@@ -215,6 +215,30 @@
 
 
 
+<section class="metodo-exclusivo">
+  <h2 class="titulo-metodo">Nosso método <strong>EXCLUSIVO</strong></h2>
+
+  <div class="mosaico-expandido">
+    <div class="mosaico-item" style="background-image: url('imagens/tech.png')">
+      <div class="overlay-text">Branding</div>
+    </div>
+    <div class="mosaico-item" style="background-image: url('imagens/tech3.jpg')">
+      <div class="overlay-text">Tráfego</div>
+    </div>
+    <div class="mosaico-item" style="background-image: url('imagens/tech4.png')">
+      <div class="overlay-text">Conteúdo</div>
+    </div>
+    <div class="mosaico-item" style="background-image: url('imagens/tech2-jpg.webp ')">
+      <div class="overlay-text">Vendas</div>
+    </div>
+  </div>
+
+  <p class="texto-metodo">
+    Integramos <strong style="color:#d49263;">branding</strong>, <strong style="color:#d49263;">tráfego</strong>, <strong style="color:#d49263;">conteúdo</strong> e <strong style="color:#d49263;">vendas</strong> em um modelo validado.<br>
+    Testado e ajustado para gerar impacto em cada etapa da sua jornada.
+  </p>
+</section>
+
 
 
 
@@ -342,6 +366,19 @@ toggle.addEventListener('click', () => {
   });
 
   observer.observe(document.querySelector('.numero-animado'));
+</script>
+
+
+<script>
+  const observerMetodo = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animado');
+      }
+    });
+  });
+
+  document.querySelectorAll('.animar').forEach(el => observerMetodo.observe(el));
 </script>
 
 
