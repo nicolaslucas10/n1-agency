@@ -388,6 +388,25 @@ toggle.addEventListener('click', () => {
   });
 </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".mosaico-item");
+
+    // Verifica se é dispositivo touch
+    const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    if (isTouch) {
+      items.forEach(item => {
+        item.addEventListener("click", () => {
+          // Remove o "ativo" de todos
+          items.forEach(i => i.classList.remove("ativo"));
+          // Adiciona no clicado
+          item.classList.add("ativo");
+        });
+      });
+    }
+  });
+</script>
 
 
 
