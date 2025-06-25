@@ -245,6 +245,20 @@
 
 
 
+<section class="sessao-n1-agencia" id="somos-n1">
+  <div class="container-n1-agencia animar">
+    <h2 class="titulo-n1-agencia">Não somos uma agência.<br><strong>Somos N1.</strong></h2>
+
+    <ul class="lista-n1-diferenciais">
+      <li><i class="ph ph-check-circle"></i> Diagnóstico personalizado</li>
+      <li><i class="ph ph-check-circle"></i> Planejamento estratégico com foco em autoridade</li>
+      <li><i class="ph ph-check-circle"></i> Execução com excelência</li>
+      <li><i class="ph ph-check-circle"></i> Otimização contínua e controle de performance</li>
+      <li><i class="ph ph-check-circle"></i> Relatórios reais. Resultados reais.</li>
+    </ul>
+  </div>
+</section>
+
 
 
 
@@ -427,6 +441,18 @@ toggle.addEventListener('click', () => {
       });
     }
   });
+</script>
+
+<script>
+  const observerN1 = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animado');
+      }
+    });
+  }, { threshold: 0.2 });
+  
+  document.querySelectorAll('.animar').forEach(el => observerN1.observe(el));
 </script>
 
 
