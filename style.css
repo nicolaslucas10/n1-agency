@@ -261,63 +261,61 @@ main {
 
 
 /* sessão n1 */
-
-    .sessao-n1 {
+.sessao-n1 {
+  padding: 120px 20px px;
   position: relative;
-  padding: 120px 20px 60px;
   z-index: 1;
 }
 
 .n1-box {
-  border-radius: 1.5rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-  padding: 2.5rem 2rem;
-  max-width: 960px;
-  margin: -160px auto 0 auto;
+  border: 1px solid #d49263;
+  border-radius: 1.25rem;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
   text-align: center;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
   opacity: 0;
   transform: translateY(40px);
   transition: 0.6s ease;
-  border: 1px solid #d49263;
 }
 
-
-.sessao-n1 h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: white;
-  text-align: center;
-  margin-bottom: 2rem;
-  position: relative;
-  z-index: 2;
+.n1-box h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
 }
-
-.n1-box {
-  margin: px auto 0 auto; /* era -160px */
-}
-
 
 .n1-box h2 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 0.8rem;
-  color: #8b4ce0;
+  color: #ffffff;
+  margin-bottom: 1rem;
 }
 
 .n1-box h3 {
-  font-size: 1.3rem;
-  color: #d49263;
+  font-size: 1.2rem;
   font-weight: 500;
-  margin-bottom: 0.5rem;
+  color: #d49263;
+  margin-bottom: 1rem;
 }
 
 .n1-box p {
-  font-size: 1.2rem;
-  color: #8b4ce0;
+  font-size: 1.1rem;
+  color: #cccccc;
 }
 
 .n1-color {
-  color: #ffffff;
+  color: #8b4ce0;
+  font-weight: 700;
+}
+
+.destaque {
+  background: linear-gradient(90deg, #8b4ce0, #d49263);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .animado {
@@ -326,41 +324,27 @@ main {
 }
 
 @media (max-width: 768px) {
-     .sessao-n1 h1 {
-  font-size: 1.9rem;
-  font-weight:650;
-  color: white;
-  margin-bottom: 1rem;
-}
-
-.n1-box h2 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 0.8rem;
-  color: #8b4ce0;
-}
-
-.n1-box h3 {
-  font-size: 1.1rem;
-  color: #d49263;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-
-.n1-box p {
-  font-size: 1rem;
-  color: #8b4ce0;
-}
-
-.n1-color {
-  color: white;
-}
-
-.animado {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
+  .n1-box {
+    padding: 2rem 1.5rem;
   }
+
+  .n1-box h1 {
+    font-size: 2rem;
+  }
+
+  .n1-box h2 {
+    font-size: 1.2rem;
+  }
+
+  .n1-box h3 {
+    font-size: 1rem;
+  }
+
+  .n1-box p {
+    font-size: 0.95rem;
+  }
+}
+
 
 /* atuação */
 
@@ -387,7 +371,9 @@ main {
 .titulo-atuacao {
   font-size: 3rem;
   font-weight:700;
-  color: #ffffff;
+background: linear-gradient(90deg, #8b4ce0, #d49263);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 1rem;
 }
 
@@ -506,7 +492,9 @@ main {
 .linha-estrategica-titulo {
   font-size: 2.3rem;
   font-weight: 700;
-  color: white;
+  background: linear-gradient(90deg, #8b4ce0, #d49263);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 1rem;
 }
 
