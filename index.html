@@ -394,23 +394,41 @@ toggle.addEventListener('click', () => {
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const items = document.querySelectorAll(".mosaico-item");
+    const section = document.querySelector(".metodo-exclusivo");
 
-    // Verifica se é dispositivo touch
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          section.classList.add("visivel");
+          observer.unobserve(section);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    observer.observe(section);
+
+    // Mobile touch: toggle no clique
+    const items = document.querySelectorAll(".mosaico-item");
     const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
     if (isTouch) {
       items.forEach(item => {
         item.addEventListener("click", () => {
-          // Remove o "ativo" de todos
+          const isActive = item.classList.contains("ativo");
+
+          // remove todos
           items.forEach(i => i.classList.remove("ativo"));
-          // Adiciona no clicado
-          item.classList.add("ativo");
+
+          // se não estava ativo, ativa esse
+          if (!isActive) {
+            item.classList.add("ativo");
+          }
         });
       });
     }
   });
 </script>
+
 
 
 
