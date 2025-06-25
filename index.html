@@ -189,12 +189,29 @@
 </section>
 
 
+<!-- Importa Phosphor Icons (versão CDN) -->
+<link href="https://unpkg.com/phosphor-icons@1.4.2/src/css/phosphor.css" rel="stylesheet">
 
-    </div>
-    
+<section class="sessao-resultados" id="resultados-n1">
+  <div class="container text-center">
+    <h2 class="titulo-resultados">Resultados que falam por si</h2>
+
+    <p class="subtexto-resultados">
+      Com mais de <span class="numero-animado" data-numero="100">0</span> empresas atendidas em todo o Brasil, a N1 já:
+    </p>
+
+    <ul class="lista-resultados mt-4">
+      <li><i class="ph ph-check-circle"></i> Alavancou campanhas políticas</li>
+      <li><i class="ph ph-check-circle"></i> Lançou eventos de porte nacional</li>
+      <li><i class="ph ph-check-circle"></i> Elevou marcas ao patamar que merecem</li>
+    </ul>
+
+    <p class="destaque-texto mt-4">
+      Enquanto outras agências criam conteúdo,<br>
+      a gente constrói <strong id="resulp">percepção</strong>, <strong id="resulp">desejo</strong> e <strong id="resulp">conversão</strong>.
+    </p>
   </div>
 </section>
-
 
 
 
@@ -294,6 +311,37 @@ toggle.addEventListener('click', () => {
   document.querySelectorAll(".linha-estrategica-container").forEach((el) =>
     observerLinha.observe(el)
   );
+</script>
+
+
+<script>
+  function animarNumeroUnico() {
+    const el = document.querySelector('.numero-animado');
+    const valorFinal = parseInt(el.getAttribute('data-numero'));
+    let atual = 0;
+    const incremento = Math.ceil(valorFinal / 60);
+
+    const animar = setInterval(() => {
+      atual += incremento;
+      if (atual >= valorFinal) {
+        el.textContent = valorFinal;
+        clearInterval(animar);
+      } else {
+        el.textContent = atual;
+      }
+    }, 30);
+  }
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animarNumeroUnico();
+        observer.disconnect();
+      }
+    });
+  });
+
+  observer.observe(document.querySelector('.numero-animado'));
 </script>
 
 

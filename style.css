@@ -562,3 +562,78 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
     flex: 1 1 calc(48% - 1rem);
   }
 }
+
+
+
+
+
+
+
+
+/* resultados */
+.sessao-resultados {
+  padding: 100px 20px;
+  color: white;
+}
+
+.titulo-resultados {
+  font-size: 2.5rem;
+  font-weight: 800;
+ background: linear-gradient(90deg, #8b4ce0, #d49263);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.subtexto-resultados {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.numero-animado {
+  font-weight: 800;
+  color: #d49263;
+  font-size: 2rem;
+}
+
+.lista-resultados {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.lista-resultados li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.lista-resultados i.ph {
+  color: #8b4ce0;
+  font-size: 1.3rem;
+}
+
+.destaque-texto {
+  font-size: 1.1rem;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+#resulp {
+  color: #d49263;
+}
+
+@media (max-width: 768px) {
+  .titulo-resultados {
+  font-size: 2rem;
+  font-weight: 800;
+ background: linear-gradient(90deg, #8b4ce0, #d49263);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+}
