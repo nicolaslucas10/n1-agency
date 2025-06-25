@@ -370,16 +370,25 @@ toggle.addEventListener('click', () => {
 
 
 <script>
-  const observerMetodo = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animado');
-      }
-    });
-  });
+  document.addEventListener('DOMContentLoaded', () => {
+    const metodoSection = document.querySelector('.metodo-exclusivo');
 
-  document.querySelectorAll('.animar').forEach(el => observerMetodo.observe(el));
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          metodoSection.classList.add('visivel');
+          observer.unobserve(metodoSection); // só anima 1 vez
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    observer.observe(metodoSection);
+  });
 </script>
+
+
 
 
 
