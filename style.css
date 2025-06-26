@@ -47,7 +47,7 @@ header {
 
 /* BOTÃO WHATSAPP COM ESTILO E ANIMAÇÃO */
 .whatsapp-btn {
-  color: white;
+  color: #cccccc;
   background: linear-gradient(90deg, #ff9cdb, #8b4ce0,#ff9cdb);
   border: none;
   padding: 0.7rem 1.8rem;
@@ -133,7 +133,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: white;
+  color: #cccccc;
   text-decoration: none;
   font-size: 1rem;
   transition: all 0.3s ease;
@@ -176,7 +176,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #cccccc;
   text-align: center;
 }
 
@@ -249,7 +249,7 @@ main {
       opacity: 0;
       transform: translateY(30px);
       animation: slideIn 1s ease forwards 0.3s;
-      color: white;
+      color: #cccccc;
     }
 
     .hero p {
@@ -258,7 +258,7 @@ main {
       opacity: 0;
       transform: translateY(30px);
       animation: slideIn 1s ease forwards 0.5s;
-       color: white;
+       color: #cccccc;
     }
 
     .hero .cta-btn {
@@ -267,7 +267,7 @@ main {
   background: linear-gradient(270deg, #8c4ce0c1, #ff9cdb, #8b4ce0, #ff9cdb, #8b4ce0, #8c4ce0c5,#ff9cdb, #ff9cdb, #8c4ce0ac);
   background-size: 600% 600%;
   border: none;
-  color: white;
+  color: #cccccc;
   font-size: 1.1rem;
   font-weight: 700;
   cursor: pointer;
@@ -338,7 +338,7 @@ main {
 .n1-box h1 {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #ffffff;
+  color: #cccccc;
   margin-bottom: 1.5rem;
   line-height: 1.3;
 }
@@ -346,7 +346,7 @@ main {
 .n1-box h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #cccccc;
   margin-bottom: 1rem;
 }
 
@@ -461,7 +461,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
    .titulo-atuacao {
   font-size: 1.7rem;
   font-weight: 700;
-  color: white;
+  color: #cccccc;
   margin-bottom: 1rem;
 }
 
@@ -622,7 +622,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   border: 1px solid #ff9cdb;
   border-radius: 12px;
   padding: 1.2rem 1.5rem;
-  color: white;
+  color: #cccccc;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   text-align: left;
   transition: all 0.4s ease;
@@ -645,7 +645,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   margin: 0;
   font-size: 1rem;
   font-weight: 600;
-  color: #fff;
+  color: #cccccc;
 }
 
 /* Responsivo: duas colunas em telas maiores */
@@ -672,7 +672,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
 /* resultados */
 .sessao-resultados {
   padding: 50px 20px;
-  color: white;
+  color: #cccccc;
 }
 
 .titulo-resultados {
@@ -700,7 +700,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   padding: 0;
   margin: 30px 0;
   font-size: 1.1rem;
-  color: #ccc;
+  color: #cccccc;
 }
 
 .lista-resultados li {
@@ -753,7 +753,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
 .metodo-exclusivo {
   text-align: center;
   padding: 10px 0;
-  color: white;
+  color: #cccccc;
 }
 
 .titulo-metodo {
@@ -795,7 +795,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #cccccc;
   font-weight: bold;
   font-size: 1.5rem;
   opacity: 0;
@@ -848,7 +848,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
 .sessao-n1-agencia {
   padding: 40px 20px;
   
-  color: white;
+  color: #cccccc;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -891,7 +891,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  color: #ffffff;
+  color: #cccccc;
 }
 
 .lista-n1-diferenciais li i {
@@ -950,7 +950,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
     border: 1px solid #ff9cdb;
     border-radius: 8px;
     background: #8c4ce027;
-    color: #fff;
+    color: #cccccc;
     font-size: 1rem;
   }
 
@@ -984,7 +984,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
 }
 
 .footer a {
-  color: #fff;
+  color: #cccccc;
   text-decoration: none;
 }
 
