@@ -317,7 +317,7 @@ main {
 
 /* sessão n1 */
 .sessao-n1 {
-  padding: 80px 10px px;
+  padding: 60px 10px 10px;
   position: relative;
   z-index: 1;
 }
@@ -326,7 +326,7 @@ main {
   border: 1px solid #ff9cdb;
   border-radius: 1.25rem;
   padding: 3rem 2rem;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   text-align: center;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
@@ -975,7 +975,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   }
 
   .footer {
-  color: #d49263;
+  color: #ff9cdb;
   padding: 20px 0;
   text-align: center;
   font-family: Arial, sans-serif;
