@@ -164,7 +164,74 @@ main {
   }
 }
 
+/* seja n1 */
 
+
+.sessao-n1 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cccccc;
+  padding: 80px 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+.sessao-n1.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.conteudo-n1 {
+  max-width: 800px;
+}
+
+.sessao-n1 .subtitulo {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.sessao-n1 .titulo {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #cccccc;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.sessao-n1 .destaque {
+  color: #ff9cdb; /* Rosa neon */
+}
+
+.sessao-n1 .descricao {
+  font-size: 1.1rem;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .sessao-n1 .titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #cccccc;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.sessao-n1 .subtitulo {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.sessao-n1 .descricao {
+  font-size: 0.8rem;
+  color: #cccccc;
+  line-height: 1.6;
+}
+}
 
 
 /* whatsap */

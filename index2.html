@@ -54,6 +54,19 @@
 </header>
 
 
+<section class="sessao-n1" id="sessaoN1">
+  <div class="conteudo-n1">
+    <p class="subtitulo">Não é só anúncio. É consultoria exclusiva com o nosso método personalizado N1.</p>
+    <h2 class="titulo">
+      O NOSSO <span class="destaque">TRÁFEGO PREMIUM</span> É EXCLUSIVO,
+      FEITO SOB MEDIDA PARA QUEM QUER VENDER MAIS COM <span class="destaque">PREVISIBILIDADE</span>.
+    </h2>
+    <p class="descricao">
+      Na Seja N1, tráfego pago não é impulsionar por impulso.<br>
+      É estudar o público, testar o que funciona e colocar sua marca no lugar certo, na hora certa, com a mensagem certa.
+    </p>
+  </div>
+</section>
 
 
 
@@ -143,6 +156,23 @@ toggle.addEventListener('click', () => {
     container.appendChild(line);
   }
 </script>
+
+<script>
+  // Animação simples de aparecer ao rolar a página
+  function animarAoScroll() {
+    const elemento = document.getElementById("sessaoN1");
+    const posicao = elemento.getBoundingClientRect().top;
+    const alturaTela = window.innerHeight;
+
+    if (posicao < alturaTela - 100) {
+      elemento.classList.add("ativo");
+    }
+  }
+
+  window.addEventListener("scroll", animarAoScroll);
+  window.addEventListener("load", animarAoScroll);
+</script>
+
 
 
 </body>
