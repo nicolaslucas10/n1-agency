@@ -179,6 +179,10 @@ main {
       position: relative;
     }
 
+    .tranform{
+      font-size: 2.2rem;
+    }
+
     #h101{
     color: #ff9cdb;
     }
