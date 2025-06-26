@@ -255,11 +255,14 @@ main {
 
     @media (max-width: 768px) {
       .hero h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
+      .tranform{
+      font-size: 1rem;
+    }
 
       .hero p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
       }
     }
 
