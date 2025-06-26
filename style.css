@@ -48,7 +48,7 @@ header {
 /* BOTÃO WHATSAPP COM ESTILO E ANIMAÇÃO */
 .whatsapp-btn {
   color: white;
-  background: linear-gradient(90deg, #8b4ce0, #8b4ce0);
+  background: linear-gradient(90deg, #ff9cdb, #8b4ce0,#ff9cdb);
   border: none;
   padding: 0.7rem 1.8rem;
   border-radius: 50px;
