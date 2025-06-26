@@ -9,7 +9,7 @@
 
 body {
       font-family: 'Rajdhani', sans-serif;
-      color: white;
+      color: #cccccc;
       background: linear-gradient(to right,  #181818 , #282036);
       overflow-x: hidden;
     }
@@ -47,7 +47,7 @@ header {
 
 /* BOTÃO WHATSAPP COM ESTILO E ANIMAÇÃO */
 .whatsapp-btn {
-  color: white;
+  color: #cccccc;
   background: linear-gradient(90deg, #8b4ce0, #8b4ce0);
   border: none;
   padding: 0.7rem 1.8rem;
@@ -93,7 +93,7 @@ header {
 .menu-text {
   font-weight: 500;
   font-size: 1rem;
-  color: white;
+  color: #cccccc;
 }
 
 .hamburger {
@@ -133,7 +133,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: white;
+  color: #cccccc;
   text-decoration: none;
   font-size: 1rem;
   transition: all 0.3s ease;
@@ -206,7 +206,7 @@ main {
     border: 1px solid #ff9cdb;
     border-radius: 8px;
     background: #8c4ce027;
-    color: #fff;
+    color: #cccccc;
     font-size: 1rem;
   }
 
@@ -218,7 +218,7 @@ main {
   .formulario-whatsapp button {
     background: #ff9cdb;
     border: none;
-    color: white;
+    color: #cccccc;
     padding: 12px 30px;
     font-size: 1rem;
     border-radius: 8px;
@@ -243,7 +243,7 @@ main {
 }
 
 .footer a {
-  color: #fff;
+  color: #cccccc;
   text-decoration: none;
 }
 
