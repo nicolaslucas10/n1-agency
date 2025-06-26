@@ -231,6 +231,18 @@ main {
   color: #cccccc;
   line-height: 1.6;
 }
+.sessao-n1 {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cccccc;
+  padding: 80px 10px 10px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
 }
 
 
