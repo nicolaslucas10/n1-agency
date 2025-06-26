@@ -180,7 +180,7 @@ main {
     }
 
     #h101{
-    color: #d49263;
+    color: #ff9cdb;
     }
 
     .hero-content {
@@ -212,7 +212,7 @@ main {
     .hero .cta-btn {
   padding: 1rem 2.5rem;
   border-radius: 50px;
-  background: linear-gradient(270deg, #8b4ce0, #d492637d, #d49263cb, #8b4ce0, #d492637d, #8b4ce0,#d49263, #d492637d, #8b4ce0);
+  background: linear-gradient(270deg, #8c4ce0c1, #ff9cdb, #8b4ce0, #ff9cdb, #8b4ce0, #8c4ce0c5,#ff9cdb, #ff9cdb, #8c4ce0ac);
   background-size: 600% 600%;
   border: none;
   color: white;
@@ -233,7 +233,7 @@ main {
 
     .hero .cta-btn:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 20px #d49263 ;
+      box-shadow: 0 0 20px #ff9cdb ;
     }
 
     @keyframes fadeIn {
@@ -434,20 +434,20 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
 
 .card-item .icon {
   font-size: 2.2rem;
-  color: #8b4ce0;
+  color: #ff9cdb;
   margin-bottom: 1rem;
 }
 
 .card-item h3 {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #d49263;
+  color: #cccccc;
   margin-bottom: 0.5rem;
 }
 
 .card-item p {
   font-size: 1rem;
-  color: #8b4ce0;
+  color: #ff9cdb;
 }
 
 
@@ -469,7 +469,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   padding: 2rem;
   background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(4px);
-  border: 1px solid #d49263;
+  border: 1px solid #ff9cdb;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
   transition: all 0.4s ease;
   text-align: center;
@@ -484,7 +484,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(212,146,99,0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, #ff9cdb36 0%, transparent 70%);
   transform: rotate(45deg);
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -503,14 +503,14 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
 
 .card-item .icon {
   font-size: 2.2rem;
-  color: #8b4ce0;
+  color: #ff9cdb;
   margin-bottom: 1rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .card-item:hover .icon {
   transform: scale(1.2);
-  color: #d49263;
+  color: #ff9cdba7;
 }
 
 
