@@ -268,7 +268,7 @@ main {
 }
 
 .n1-box {
-  border: 1px solid #d49263;
+  border: 1px solid #ff9cdb;
   border-radius: 1.25rem;
   padding: 3rem 2rem;
   max-width: 900px;
@@ -298,7 +298,7 @@ main {
 .n1-box h3 {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #d49263;
+  color: #ff9cdb;
   margin-bottom: 1rem;
 }
 
@@ -308,7 +308,7 @@ main {
 }
 
 .n1-color {
-  color: #8b4ce0;
+  color: #ff9cdb;
   font-weight: 700;
 }
 
@@ -387,6 +387,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* força 3 colunas */
   gap: 2rem;
+  border: 1px #ff9cdb;
 }
 
 @media (max-width: 992px) {
@@ -423,7 +424,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   text-align: center;
-  border: 1px solid #d49263;
+  border: 1px solid #ff9cdb;
 }
 
 .card-item:hover {
@@ -563,7 +564,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   align-items: center;
   gap: 1rem;
   background: rgba(255, 255, 255, 0.03);
-  border: 1px solid #d49263;
+  border: 1px solid #ff9cdb;
   border-radius: 12px;
   padding: 1.2rem 1.5rem;
   color: white;
@@ -656,13 +657,13 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
 }
 
 .lista-resultados i.ph {
-  color: #8b4ce0;
+  color: #ff9cdb;
   font-size: 1.3rem;
 }
 
 .destaque-texto {
   font-size: 1.1rem;
-  color: #8b4ce0;
+  color: #ff9cdb;
   line-height: 1.6;
 }
 
@@ -757,7 +758,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   max-width: 800px;
   margin: 0 auto;
   padding: 5px 20px;
-  color: #8b4ce0;
+  color: #ff9cdb;
 }
 
 .metodo-exclusivo {
@@ -839,7 +840,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
 }
 
 .lista-n1-diferenciais li i {
-  color: #8b4ce0;
+  color: #ff9cdb;
   font-size: 1.4rem;
 }
 
@@ -853,3 +854,67 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
     font-size: 1rem;
   }
 }
+
+
+/* whatsap */
+
+.formulario-whatsapp {
+    
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .formulario-whatsapp .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #ff9cdb;
+    box-shadow: 0 0 10px rgba(255, 156, 219, 0.2);
+  }
+
+  .titulo-formulario {
+      background: linear-gradient(90deg, #8b4ce0, #d49263);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  .subtitulo-formulario {
+    color: #8b4ce0;
+    margin-bottom: 30px;
+  }
+
+  .formulario-whatsapp input,
+  .formulario-whatsapp textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ff9cdb;
+    border-radius: 8px;
+    background: #8c4ce027;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .formulario-whatsapp textarea {
+    resize: vertical;
+    height: 100px;
+  }
+
+  .formulario-whatsapp button {
+    background: #ff9cdb;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .formulario-whatsapp button:hover {
+    background: #ff9cdb9c;
+  }
