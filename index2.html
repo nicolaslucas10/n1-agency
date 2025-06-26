@@ -68,6 +68,39 @@
   </div>
 </section>
 
+<section class="linha-do-tempo">
+  <h2 class="titulo-linha">Início da implementação do projeto</h2>
+<div class="linha">
+  <div class="item scroll-animar">
+    <p class="cima"><br>.</p>
+    <span class="ponto"></span>
+    <p class="baixo">Assinatura do contrato</p>
+  </div>
+  <div class="item scroll-animar">
+    <p class="cima">Reunião de onboarding<br>e diagnóstico comercial</p>
+    <span class="ponto"></span>
+    <p class="baixo">.</p>
+  </div>
+  <div class="item scroll-animar">
+    <p class="cima"><br>.</p>
+    <span class="ponto"></span>
+    <p class="baixo">Configuração da conta de anúncio</p>
+  </div>
+  <div class="item scroll-animar">
+    <p class="cima">Apresentação do planejamento<br>de marketing e comercial</p>
+    <span class="ponto"></span>
+    <p class="baixo">.</p>
+  </div>
+  <div class="item scroll-animar">
+    <p class="cima"><br>.</p>
+    <span class="ponto"></span>
+    <p class="baixo">Início da geração de leads</p>
+  </div>
+</div>
+
+</section>
+
+
 
 
 
@@ -173,6 +206,36 @@ toggle.addEventListener('click', () => {
   window.addEventListener("load", animarAoScroll);
 </script>
 
+<script>
+  function animarLinhaDoTempo() {
+    const sec = document.getElementById("linhaDoTempo");
+    const topo = sec.getBoundingClientRect().top;
+    const altura = window.innerHeight;
+
+    if (topo < altura - 100) {
+      sec.classList.add("ativo");
+    }
+  }
+
+  window.addEventListener("scroll", animarLinhaDoTempo);
+  window.addEventListener("load", animarLinhaDoTempo);
+</script>
+
+
+<script>
+  window.addEventListener('scroll', function () {
+    const elementos = document.querySelectorAll('.scroll-animar');
+    const alturaJanela = window.innerHeight;
+
+    elementos.forEach(el => {
+      const posicao = el.getBoundingClientRect().top;
+
+      if (posicao < alturaJanela - 100) {
+        el.classList.add('ativo');
+      }
+    });
+  });
+</script>
 
 
 </body>

@@ -246,6 +246,90 @@ main {
 }
 
 
+/* sessao linha trempo */
+
+.linha-do-tempo {
+  background: linear-gradient(to right, #181818, #282036);
+  padding: 80px 20px;
+  color: #cccccc;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.titulo-linha {
+    font-size: 3rem;
+  font-weight:700;
+background: linear-gradient(90deg, #8b4ce0, #d49263);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.linha {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.linha::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-top: 3px dashed #cccccc;
+  z-index: 0;
+}
+
+.item {
+  position: relative;
+  text-align: center;
+  width: 25%;
+  z-index: 1;
+}
+
+.cima {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #cccccc;
+}
+
+.baixo {
+  font-size: 0.9rem;
+  margin-top: 20px;
+  color: #cccccc;
+}
+
+.ponto {
+  width: 18px;
+  height: 18px;
+  background: #ff9cdb;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+
+
+/* Animação de rolagem */
+.scroll-animar {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-animar.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 /* whatsap */
 
 .formulario-whatsapp {
@@ -297,7 +381,7 @@ main {
   .formulario-whatsapp button {
     background: #ff9cdb;
     border: none;
-    color: #cccccc;
+    color: white;
     padding: 12px 30px;
     font-size: 1rem;
     border-radius: 8px;
