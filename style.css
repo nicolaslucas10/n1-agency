@@ -49,7 +49,7 @@ header {
 /* BOTÃO WHATSAPP COM ESTILO E ANIMAÇÃO */
 .whatsapp-btn {
   color: #cccccc;
-  background: linear-gradient(90deg,  #8c4ce0f6, #8c4ce0cc, #8c4ce09c, #8c4ce0c5, #8c4ce0ac,#8c4ce09f,#8b4ce0);
+  background: linear-gradient(90deg,  #8c4ce0f6, #8c4ce0da, #8c4ce09c,  #8c4ce0dc, #8c4ce0ac,#8c4ce0d0,#8b4ce0);
   border: none;
   padding: 0.7rem 1.8rem;
   border-radius: 50px;
@@ -276,7 +276,8 @@ main {
     .hero .cta-btn {
   padding: 1rem 2.5rem;
   border-radius: 50px;
-  background: linear-gradient(270deg, #8c4ce0f6, #8c4ce03a, #8c4ce09c, #8c4ce0c5, #8c4ce0ac,#8c4ce046,#8b4ce0);
+  background: linear-gradient(270deg, #8c4ce0f6, #8c4ce0da, #8c4ce09c,
+   #8c4ce0dc, #8c4ce0ac,#8c4ce0d0,#8b4ce0);
   background-size: 600% 600%;
   border: none;
   color: #cccccc;
