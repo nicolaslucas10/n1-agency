@@ -385,6 +385,10 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   z-index: 2;
 }
 
+.vazio{
+  color: transparent; 
+}
+
 /* === MOBILE (ponto no centro + texto alternado) === */
 @media (max-width: 768px) {
   .linha {
