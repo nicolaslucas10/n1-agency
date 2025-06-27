@@ -487,9 +487,9 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
     z-index: 2;
   }
   .titulo-linha {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
   font-weight:700;
-background: linear-gradient(90deg, #8b4ce0, #d49263);
+  background: linear-gradient(90deg, #8b4ce0, #d49263);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 2rem;
@@ -618,7 +618,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
       background: linear-gradient(90deg, #8b4ce0, #d49263);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 10px;
     font-weight: 700;
   }
@@ -660,6 +660,16 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
     background: #ff9cdb9c;
   }
 
+  @media (max-width: 768px) {
+    .titulo-formulario {
+      background: linear-gradient(90deg, #8b4ce0, #d49263);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  }
 
 /* footer */
 
