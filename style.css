@@ -751,12 +751,11 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
 }
 
 
-/* mosaico */
-
 .metodo-exclusivo {
   text-align: center;
-  padding: 10px 0;
+  padding: 60px 20px;
   color: #cccccc;
+  background: linear-gradient(to right, #181818, #282036);
 }
 
 .titulo-metodo {
@@ -765,50 +764,51 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   background: linear-gradient(90deg, #8b4ce0, #d49263);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
-.mosaico-expandido {
+.cards-metodo {
   display: flex;
-  height: 220px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card-metodo {
+  background-color: #1e1e2e;
+  border-radius: 12px;
   overflow: hidden;
-  border-radius: 20px;
-  width: 50vw;
-  margin: 0 auto 30px auto;
+  width: 260px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 156, 219, 0.1);
 }
 
-
-.mosaico-item {
-  flex: 1;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  transition: flex 0.5s ease;
-  filter: grayscale(1) brightness(0.4);
-  cursor: pointer;
+.card-metodo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 156, 219, 0.2);
 }
 
-.mosaico-item:hover {
-  flex: 2;
-  filter: grayscale(0) brightness(1);
+.card-metodo img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
 }
 
-.overlay-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.texto-card {
+  padding: 15px;
+}
+
+.texto-card h3 {
+  font-size: 1.3rem;
+  color: #ff9cdb;
+  margin-bottom: 10px;
+}
+
+.texto-card p {
+  font-size: 0.95rem;
   color: #cccccc;
-  font-weight: bold;
-  font-size: 1.5rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-  text-shadow: 2px 2px 2px  black;
-}
-
-.mosaico-item:hover .overlay-text {
-  opacity: 2;
+  line-height: 1.4;
 }
 
 .texto-metodo {
@@ -819,97 +819,13 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   color: #ff9cdb;
 }
 
-.metodo-exclusivo {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.8s ease-out;
-}
-
-.metodo-exclusivo.visivel {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
 @media (max-width: 768px) {
-.mosaico-expandido {
-  display: flex;
-  height: 220px;
-  overflow: hidden;
-  border-radius: 20px;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  margin-bottom: 30px;
-}
-
-}
-
-
-/* somos n1 */
-
-.sessao-n1-agencia {
-  padding: 40px 20px;
-  
-  color: #cccccc;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.container-n1-agencia {
-  max-width: 1000px;
-  margin: 0 auto;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.8s ease;
-}
-
-.container-n1-agencia.animado {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.titulo-n1-agencia {
-  font-size: 2.5rem;
-  font-weight: 700;
-  background: linear-gradient(90deg, #8b4ce0, #d49263);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 2rem;
-  line-height: 1.3;
-}
-
-.lista-n1-diferenciais {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  text-align: left;
-  display: inline-block;
-}
-
-.lista-n1-diferenciais li {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  color: #cccccc;
-}
-
-.lista-n1-diferenciais li i {
-  color: #ff9cdb;
-  font-size: 1.4rem;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .titulo-n1-agencia {
-    font-size: 1.8rem;
+  .cards-metodo {
+    flex-direction: column;
+    align-items: center;
   }
-
-  .lista-n1-diferenciais li {
-    font-size: 1rem;
+  .card-metodo {
+    width: 90%;
   }
 }
 

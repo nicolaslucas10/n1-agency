@@ -486,6 +486,15 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
     border-radius: 50%;
     z-index: 2;
   }
+  .titulo-linha {
+    font-size: 2.5rem;
+  font-weight:700;
+background: linear-gradient(90deg, #8b4ce0, #d49263);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  
+}
 }
 
 
@@ -581,7 +590,13 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   line-height: 1.4;
 }
 
-
+@media (max-width: 768px) {
+.como-titulo {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+  }
 /* whatsap */
 
 .formulario-whatsapp {
