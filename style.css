@@ -695,7 +695,7 @@ main {
 
 .titulo-resultados {
   font-size: 2.5rem;
-  font-weight: 800;
+  font-weight: 700;
  background: linear-gradient(90deg, #8b4ce0, #d49263);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -747,7 +747,7 @@ main {
 @media (max-width: 768px) {
   .titulo-resultados {
   font-size: 2.5rem;
-  font-weight: 800;
+  font-weight: 700;
  background: linear-gradient(90deg, #8b4ce0, #d49263);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
