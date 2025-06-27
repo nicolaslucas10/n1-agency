@@ -216,27 +216,40 @@
 
 
 <section class="secao-mosaico-metodo">
-  <h2 class="titulo-mosaico-metodo">Nosso método <strong>EXCLUSIVO</strong></h2>
+  <h2 class="titulo-mosaico-metodo">Nosso método <strong style="color:#b174ff">EXCLUSIVO</strong></h2>
 
   <div class="mosaico-metodo">
     <div class="mosaico-item-metodo" style="background-image: url('imagens/tech.png');">
-      <div class="texto-central">Branding</div>
+      <div class="overlay-mosaico">
+        <h3>ESTRUTURAR</h3>
+        <p>Estruturamos a estratégia voltada para o marketing da sua empresa, contribuindo para um posicionamento mais eficaz no mercado.</p>
+      </div>
     </div>
     <div class="mosaico-item-metodo" style="background-image: url('imagens/tech3.jpg');">
-      <div class="texto-central">Tráfego</div>
+      <div class="overlay-mosaico">
+        <h3>ENGAJAR</h3>
+        <p>Criamos conexões reais com seu público, para construir confiança e autoridade.</p>
+      </div>
     </div>
     <div class="mosaico-item-metodo" style="background-image: url('imagens/tech4.png');">
-      <div class="texto-central">Conteúdo</div>
+      <div class="overlay-mosaico">
+        <h3>ESCALAR</h3>
+        <p>Aplicamos estratégias escaláveis para fazer sua empresa crescer com consistência.</p>
+      </div>
     </div>
     <div class="mosaico-item-metodo" style="background-image: url('imagens/tech2-jpg.webp');">
-      <div class="texto-central">Vendas</div>
+      <div class="overlay-mosaico">
+        <h3>SUSTENTAR</h3>
+        <p>Analisamos métricas e otimizamos sua performance digital continuamente.</p>
+      </div>
     </div>
   </div>
-
-  <p class="descricao-mosaico">
+  </BR>
+    <p class="descricao-mosaico">
     Unimos <strong style="color:#cccccc;">branding</strong>, <strong style="color:#cccccc;">tráfego</strong>, <strong style="color:#cccccc;">conteúdo</strong> e <strong style="color:#cccccc;">vendas</strong> para acelerar resultados reais.
   </p>
 </section>
+
 
 
 
@@ -526,6 +539,31 @@ toggle.addEventListener('click', () => {
         });
       });
     }
+  });
+</script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const itens = document.querySelectorAll('.mosaico-item-metodo');
+
+    itens.forEach((item) => {
+      item.addEventListener('touchstart', function () {
+        // Remove a classe "ativo" de todos os itens
+        itens.forEach((el) => el.classList.remove('ativo'));
+
+        // Adiciona a classe "ativo" somente no item tocado
+        this.classList.add('ativo');
+      });
+    });
+
+    // Remove classe ativa ao tocar fora (opcional)
+    document.addEventListener('touchstart', function (e) {
+      const isTouchInside = e.target.closest('.mosaico-item-metodo');
+      if (!isTouchInside) {
+        itens.forEach((el) => el.classList.remove('ativo'));
+      }
+    });
   });
 </script>
 

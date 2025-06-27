@@ -766,89 +766,33 @@ main {
 }
 
 
-/* mosaico */
 
-.secao-mosaico-metodo {
-  padding: 80px 20px 10px;
-  text-align: center;
-  color: #cccccc;
-}
 
-.titulo-mosaico-metodo {
-  font-size: 3rem;
-  margin-bottom: 3rem;
-  font-weight: bold;
-  background: linear-gradient(90deg, #8b4ce0, #d49263);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.mosaico-metodo {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto 40px;
-  padding: 0 10px;
-}
-
-.mosaico-item-metodo {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  height: 220px;
-  border-radius: 14px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  filter: grayscale(0) brightness(1); /* imagem colorida por padrão */
-}
-
-.mosaico-item-metodo:hover {
-  transform: scale(1.05);
-  filter: ; /* fica P&B ao passar o mouse */
-  box-shadow: 0 8px 20px rgba(255, 156, 219, 0.3);
-}
-
-.texto-central {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #cccccc;
-  text-shadow: 2px 2px 4px rgb(0, 0, 0);
-  pointer-events: none;
-  transition: transform 0.4s ease, opacity 0.4s ease;
-}
-
-.mosaico-item-metodo:hover .texto-central {
-  transform: translate(-50%, -50%) scale(1.05);
-  opacity: 1;
-}
-
+/* mosaico*/
 .descricao-mosaico {
   color: #ff9cdb;
   max-width: 800px;
   margin: 0 auto;
   font-size: 1.1rem;
 }
-
-
-.mosaico-item-metodo.ativo {
-  transform: scale(1.05);
-  filter: grayscale(0) brightness(1);
-  box-shadow: 0 8px 20px rgba(255, 156, 219, 0.3);
+.mosaico-item-metodo:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
 }
 
-.mosaico-item-metodo.ativo .texto-central {
-  transform: translate(-50%, -50%) scale(1.05);
-  opacity: 1;
+.mosaico-item-metodo:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
 }
 
+.secao-mosaico-metodo {
+  padding: 80px 20px;
+  color: #cccccc;
+  text-align: center;
+}
 
-@media (max-width: 768px) {
 .titulo-mosaico-metodo {
   font-size: 2.5rem;
   margin-bottom: 3rem;
@@ -857,7 +801,106 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
+.mosaico-metodo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.mosaico-item-metodo {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  transition: all 0.4s ease;
+}
+
+.mosaico-item-metodo:hover {
+  transform: scale(1.02);
+  z-index: 2;
+}
+
+.overlay-mosaico {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* escurece a imagem */
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.mosaico-item-metodo:hover .overlay-mosaico {
+  opacity: 1;
+}
+
+.overlay-mosaico h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #ff9cdb;
+}
+
+.overlay-mosaico p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #cccccc;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .mosaico-metodo {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media (max-width: 600px) {
+  .mosaico-metodo {
+    grid-template-columns: 1fr;
+  }
+
+  .mosaico-item-metodo {
+    height: 300px;
+  }
+
+  .titulo-mosaico-metodo {
+    font-size: 2rem;
+  }
+
+  .overlay-mosaico h3 {
+    font-size: 1.2rem;
+  }
+
+  .overlay-mosaico p {
+    font-size: 0.85rem;
+  }
+  .mosaico-item-metodo:first-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  overflow: none;
+}
+
+.mosaico-item-metodo:last-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow: none;
+}
+}
+
 /* somos n1 */
 
 .sessao-n1-agencia {
