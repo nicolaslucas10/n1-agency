@@ -247,6 +247,51 @@ main {
 }
 }
 
+.lines-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #ff9cdb, transparent);
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+  0% {
+    top: -100px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    top: 110%;
+    opacity: 0;
+  }
+}
+
+/* Para garantir que o conteúdo fique acima das linhas */
+.sessao-n1 {
+  position: relative;
+  z-index: 1;
+}
+.conteudo-n1 {
+  position: relative;
+  z-index: 2;
+}
+
 
 /* sessao linha trempo */
 

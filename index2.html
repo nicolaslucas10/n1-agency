@@ -46,7 +46,7 @@
   <nav id="nav">
     <ul>
       <li><a href="index.html">Início</a></li>
-      <li><a href="#">Tráfego Premium N1</a></li>
+      
       <li><a href="#">Serviços</a></li>
       <li><a href="#">Contato</a></li>
     </ul>
@@ -55,6 +55,8 @@
 
 
 <section class="sessao-n1" id="sessaoN1">
+  <div id="linesContainer" class="lines-container"></div>
+
   <div class="conteudo-n1">
     <p class="subtitulo">Não é só anúncio. É consultoria exclusiva com o nosso método personalizado N1.</p>
     <h2 class="titulo">
@@ -67,6 +69,7 @@
     </p>
   </div>
 </section>
+
 
 <section class="linha-do-tempo">
   <h2 class="titulo-linha">Início da implementação do projeto</h2>
@@ -280,6 +283,22 @@ toggle.addEventListener('click', () => {
   });
 </script>
 
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById("linesContainer");
+
+    for (let i = 0; i < 50; i++) {
+      const line = document.createElement("div");
+      line.classList.add("line");
+      line.style.left = `${Math.random() * 100}%`;
+      line.style.height = `${50 + Math.random() * 100}px`;
+      line.style.animationDuration = `${2 + Math.random() * 3}s`;
+      line.style.animationDelay = `${Math.random() * 5}s`;
+      container.appendChild(line);
+    }
+  });
+</script>
 
 </body>
 </html>
