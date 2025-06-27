@@ -589,6 +589,25 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   line-height: 1.4;
 }
 
+.subtitulo-funciona {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  background: linear-gradient(90deg, #ff9cdb, #b174ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.descricao-funciona {
+  font-size: 1rem;
+  color: #cccccc;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
 @media (max-width: 768px) {
 .como-titulo {
   font-size: 2.5rem;
