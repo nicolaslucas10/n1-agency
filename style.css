@@ -492,7 +492,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
 
 .card-item .icon {
   font-size: 2.2rem;
-  color: #ff9cdb;
+  color: #8b4ce0;
   margin-bottom: 1rem;
 }
 
@@ -561,7 +561,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
 
 .card-item .icon {
   font-size: 2.2rem;
-  color: #ff9cdb;
+  color: #8b4ce0;
   margin-bottom: 1rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }
