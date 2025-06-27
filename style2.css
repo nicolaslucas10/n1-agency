@@ -204,7 +204,9 @@ main {
 }
 
 .sessao-n1 .destaque {
-  color: #ff9cdb; /* Rosa neon */
+ background: linear-gradient(90deg, #8b4ce0, #d49263);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .sessao-n1 .descricao {
@@ -485,10 +487,10 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
 }
 
 .card {
-  background-color: #1e1e2e !important; /* fundo escuro sólido */
-  border: 1px solid #b174ff !important;
+  background-color: transparent !important; /* fundo escuro sólido */
+  border: 1px solid #ff9cdb !important;
   border-radius: 12px;
-  padding: 30px 20px;
+  padding: 15px 20px;
   width: 250px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   color: #dddddd !important;

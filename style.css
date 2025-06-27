@@ -233,7 +233,9 @@ main {
     }
 
     #h101{
-    color: #ff9cdb;
+    background: linear-gradient(90deg, #8b4ce0, #d49263);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     }
 
     .hero-content {
