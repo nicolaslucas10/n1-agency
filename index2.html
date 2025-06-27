@@ -84,7 +84,7 @@
     <div class="item">
       <p class="texto">Configuração da conta de anúncio</p>
       <span class="ponto"></span>
-      <p class="vazio">.</p>
+      <p class="vazio"><br>.</p>
     </div>
     <div class="item">
       <p class="vazio"><br><br>.</p>
@@ -101,6 +101,27 @@
 
 
 
+<section class="como-funciona">
+  <h2 class="como-titulo"><span>Como funciona?</span></h2>
+  <div class="cards">
+    <div class="card">
+      <div class="numero">1</div>
+      <p>Estruturamos sua associação para se diferenciar no mercado e atrair bons associados.</p>
+    </div>
+    <div class="card">
+      <div class="numero">2</div>
+      <p>Implementamos processos comerciais para melhorar o seu atendimento e conversão.</p>
+    </div>
+    <div class="card">
+      <div class="numero">3</div>
+      <p>Executamos as melhores estratégias de anúncios no mercado para conseguir leads qualificados, pois nosso foco é exclusivo na adesão.</p>
+    </div>
+    <div class="card">
+      <div class="numero">4</div>
+      <p>Analisamos as métricas necessárias para melhorar o seu desempenho de vendas através do digital.</p>
+    </div>
+  </div>
+</section>
 
 
 
@@ -234,6 +255,28 @@ toggle.addEventListener('click', () => {
         el.classList.add('ativo');
       }
     });
+  });
+</script>
+
+
+<script>
+  const cards = document.querySelectorAll('.card');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = 1;
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  cards.forEach(card => {
+    card.style.opacity = 0;
+    card.style.transform = 'translateY(40px)';
+    observer.observe(card);
   });
 </script>
 

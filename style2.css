@@ -438,6 +438,9 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
 }
 
 
+
+
+
 /* Animação de rolagem */
 .scroll-animar {
   opacity: 0;
@@ -448,6 +451,83 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
 .scroll-animar.ativo {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+
+/* como funciona */
+
+.como-funciona {
+
+  color: #ffffff;
+  padding: 80px 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.como-titulo {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.como-titulo span {
+  background: linear-gradient(90deg, #ff9cdb, #b174ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #1e1e2e !important; /* fundo escuro sólido */
+  border: 1px solid #b174ff !important;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #dddddd !important;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 156, 219, 0.15);
+}
+
+.card .numero {
+  font-size: 5.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #ff9cdb, #b174ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #cccccc !important;
+}
+
+
+.numero {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #ff9cdb, #b174ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #dddddd;
+  line-height: 1.4;
 }
 
 
