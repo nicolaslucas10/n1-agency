@@ -217,7 +217,7 @@ main {
 
 @media (max-width: 768px) {
   .sessao-n1 .titulo {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #cccccc;
   margin-bottom: 20px;
@@ -234,7 +234,7 @@ main {
   line-height: 1.6;
 }
 .sessao-n1 {
-  min-height: 60vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
