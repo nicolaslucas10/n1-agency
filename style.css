@@ -227,6 +227,15 @@ main {
       text-align: center;
       position: relative;
     }
+    
+.zoom {
+  display: inline-block;
+  color: #ff9cdb;
+  font-weight: bold;
+}
+
+
+
 
     .tranform{
       font-size: 2.2rem;
