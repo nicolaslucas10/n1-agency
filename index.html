@@ -508,6 +508,26 @@ toggle.addEventListener('click', () => {
   }
 </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll('.mosaico-item-metodo');
+
+    // Só ativa em telas menores que 768px (mobile)
+    if (window.innerWidth <= 768) {
+      cards.forEach(card => {
+        card.addEventListener('click', () => {
+          // Remove "ativo" de todos os outros cards
+          cards.forEach(c => {
+            if (c !== card) c.classList.remove('ativo');
+          });
+
+          // Alterna a classe "ativo" no card clicado
+          card.classList.toggle('ativo');
+        });
+      });
+    }
+  });
+</script>
 
 
 </body>

@@ -234,7 +234,7 @@ main {
 
     #h101{
     background: linear-gradient(90deg, #8b4ce0, #d49263);
-  -webkit-background-clip: text;
+   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     }
 
@@ -443,7 +443,7 @@ main {
 .titulo-atuacao {
   font-size: 3rem;
   font-weight:700;
-background: linear-gradient(90deg, #8b4ce0, #d49263);
+  background: linear-gradient(90deg, #8b4ce0, #d49263);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 1rem;
@@ -835,6 +835,17 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   font-size: 1.1rem;
 }
 
+
+.mosaico-item-metodo.ativo {
+  transform: scale(1.05);
+  filter: grayscale(0) brightness(1);
+  box-shadow: 0 8px 20px rgba(255, 156, 219, 0.3);
+}
+
+.mosaico-item-metodo.ativo .texto-central {
+  transform: translate(-50%, -50%) scale(1.05);
+  opacity: 1;
+}
 
 
 @media (max-width: 768px) {
