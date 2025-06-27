@@ -663,8 +663,8 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   @media (max-width: 768px) {
     .titulo-formulario {
       background: linear-gradient(90deg, #8b4ce0, #d49263);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 2rem;
     margin-bottom: 10px;
     font-weight: 700;
