@@ -880,7 +880,7 @@ main {
   }
 
   .titulo-mosaico-metodo {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .overlay-mosaico h3 {
@@ -962,7 +962,7 @@ main {
 /* Responsivo */
 @media (max-width: 768px) {
   .titulo-n1-agencia {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 
   .lista-n1-diferenciais li {
