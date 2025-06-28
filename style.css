@@ -18,22 +18,10 @@ body {
    * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  border: none !important;
-  outline: none !important;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  border: none !important;
-  outline: none !important;
-  background-color: #000;
-}
 
-:focus {
-  outline: none !important;
-}
+
 
 
 header {
