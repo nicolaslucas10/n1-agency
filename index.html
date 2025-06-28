@@ -61,13 +61,15 @@
   <div class="lines-container" id="linesContainer"></div>
 
   <div class="hero-content content">
-    <h1 class="animarHeroH1">
+    <h1 class="animarHeroTitulo">
       <span class="tranform"></span><br>
-      <span id="h101">ESTRATÉGIA, POSICIONAMENTO E</span>
+      <span id="h101">ESTRATÉGIA, POSICIONAMENTO E</span>  
       <span id="h101">CONVERSÃO</span> PARA QUEM QUER CRESCER DE VERDADE.
     </h1>
 
-    <p class="zoom animarHeroTexto">Tenha a maior assessoria de marketing dentro do seu <span id="h101">negócio.</span></p>
+    <p class="zoom animarHeroParagrafo">
+      Tenha a maior assessoria de marketing dentro do seu <span id="h101">negócio.</span>
+    </p>
 
     <button class="cta-btn animarHeroBotao">QUERO SER O NÚMERO 1</button>
   </div>
@@ -75,16 +77,18 @@
 
 
 
+
 <section class="sessao-n1" id="sessao-n1">
-  <div class="container">
-    <div class="n1-box animar">
-      <h1><span class="destaque">CHEGA DE CONTEÚDO VAZIO.</span></h1>
-      <h2>Na <span class="n1-color">SEJA N1</span>, a gente joga em outro nível:</h2>
-      <h3>Autoridade, posicionamento e vendas reais.</h3>
-      <p>Sem enrolação. Com estratégia. Com resultado.</p>
+  <div class="container animar-n1-container">
+    <div class="n1-box">
+      <h1 class="animar-n1-h1"><span class="destaque">CHEGA DE CONTEÚDO VAZIO.</span></h1>
+      <h2 class="animar-n1-h2">Na <span class="n1-color">SEJA N1</span>, a gente joga em outro nível:</h2>
+      <h3 class="animar-n1-h3">Autoridade, posicionamento e vendas reais.</h3>
+      <p class="animar-n1-p">Sem enrolação. Com estratégia. Com resultado.</p>
     </div>
   </div>
 </section>
+
 
 
 
@@ -228,25 +232,25 @@
   <h2 class="titulo-mosaico-metodo">NOSSO MÉTODO EXCLUSIVO</h2>
 
   <div class="mosaico-metodo">
-    <div class="mosaico-item-metodo" style="background-image: url('imagens/b1.png');">
+    <div class="mosaico-item-metodo" style="background-image: url('imagens/c1.png');">
       <div class="overlay-mosaico">
         <h3>ESTRUTURAR</h3>
         <p>Estruturamos a estratégia voltada para o marketing do seu negócio, contribuindo para um posicionamento mais eficaz no mercado.</p>
       </div>
     </div>
-    <div class="mosaico-item-metodo" style="background-image: url('imagens/b2.png');">
+    <div class="mosaico-item-metodo" style="background-image: url('imagens/c2.png');">
       <div class="overlay-mosaico">
         <h3>ENGAJAR</h3>
         <p>Criamos conexões reais com seu público, para construir confiança e autoridade.</p>
       </div>
     </div>
-    <div class="mosaico-item-metodo" style="background-image: url('imagens/b3.png');">
+    <div class="mosaico-item-metodo" style="background-image: url('imagens/c3.png');">
       <div class="overlay-mosaico">
         <h3>ESCALAR</h3>
         <p>Aplicamos estratégias escaláveis para fazer sua empresa crescer com consistência.</p>
       </div>
     </div>
-    <div class="mosaico-item-metodo" style="background-image: url('imagens/b4.png');">
+    <div class="mosaico-item-metodo" style="background-image: url('imagens/c4.png');">
       <div class="overlay-mosaico">
         <h3>SUSTENTAR</h3>
         <p>Analisamos métricas e otimizamos sua performance digital continuamente.</p>
@@ -359,6 +363,27 @@
 </script>
 
 
+<script>
+  function ativarAnimacaoSessaoN1() {
+    const elementos = document.querySelectorAll(
+      '.sessao-n1 .n1-box, .sessao-n1 h1, .sessao-n1 h2, .sessao-n1 h3, .sessao-n1 p'
+    );
+
+    const limite = window.innerHeight * 0.85;
+
+    elementos.forEach(el => {
+      const topoElemento = el.getBoundingClientRect().top;
+      if (topoElemento < limite) {
+        el.classList.add('ativo-n1');
+      } else {
+        el.classList.remove('ativo-n1'); // reanima ao voltar
+      }
+    });
+  }
+
+  window.addEventListener('scroll', ativarAnimacaoSessaoN1);
+  window.addEventListener('load', ativarAnimacaoSessaoN1);
+</script>
 
 
 
@@ -406,21 +431,6 @@ toggle.addEventListener('click', () => {
 </script>
 
 
-<script>
-  // Anima ao rolar
-  function animarAoScroll() {
-    const elemento = document.querySelector('.animar');
-    const topo = elemento.getBoundingClientRect().top;
-    const janela = window.innerHeight;
-
-    if (topo < janela * 0.85) {
-      elemento.classList.add('animado');
-    }
-  }
-
-  window.addEventListener('scroll', animarAoScroll);
-  window.addEventListener('load', animarAoScroll);
-</script>
 
 <script>
   const btn = document.querySelector('.whatsapp-btn');
@@ -463,35 +473,6 @@ toggle.addEventListener('click', () => {
 </script>
 
 
-<script>
-  function animarNumeroUnico() {
-    const el = document.querySelector('.numero-animado');
-    const valorFinal = parseInt(el.getAttribute('data-numero'));
-    let atual = 0;
-    const incremento = Math.ceil(valorFinal / 60);
-
-    const animar = setInterval(() => {
-      atual += incremento;
-      if (atual >= valorFinal) {
-        el.textContent = valorFinal;
-        clearInterval(animar);
-      } else {
-        el.textContent = atual;
-      }
-    }, 30);
-  }
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        animarNumeroUnico();
-        observer.disconnect();
-      }
-    });
-  });
-
-  observer.observe(document.querySelector('.numero-animado'));
-</script>
 
 
 <script>

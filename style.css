@@ -442,6 +442,33 @@ main {
   }
 }
 
+/* === Animações Sessão N1 (baseadas nas tags originais) === */
+
+.sessao-n1 .n1-box,
+.sessao-n1 h1,
+.sessao-n1 h2,
+.sessao-n1 h3,
+.sessao-n1 p {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Direções específicas */
+.sessao-n1 .n1-box     { transform: translateY(-60px); }
+.sessao-n1 h1          { transform: translateX(80px); }
+.sessao-n1 h2          { transform: translateX(-80px); }
+.sessao-n1 h3,
+.sessao-n1 p           { transform: translateY(60px); }
+
+/* Estado ativo */
+.sessao-n1 .n1-box.ativo-n1,
+.sessao-n1 h1.ativo-n1,
+.sessao-n1 h2.ativo-n1,
+.sessao-n1 h3.ativo-n1,
+.sessao-n1 p.ativo-n1 {
+  opacity: 1;
+  transform: translate(0, 0);
+}
 
 /* atuação */
 
