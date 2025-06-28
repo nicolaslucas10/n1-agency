@@ -58,7 +58,7 @@ header {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.95rem;
+  font-size: 1rem;
   box-shadow: 0 0 0px #8b4ce0;
   transition: all 0.3s ease;
   animation: pulseGlow 2s infinite;
@@ -79,6 +79,45 @@ header {
   }
   100% {
     box-shadow: 0 0 0px #8b4ce0;
+  }
+}
+
+.whatsapp-container {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+
+
+.light-line-wpp {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, transparent, #ff9cdb, transparent);
+  background-size: 300% 100%;
+  animation: moveLightWpp 2s linear infinite;
+  filter: blur(2px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Aumenta o z-index do botão pra ficar acima da linha */
+.whatsapp-btn {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes moveLightWpp {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
   }
 }
 
@@ -270,29 +309,33 @@ main {
        color: #cccccc;
     }
 
-    .hero .cta-btn {
+.cta-container {
+  position: relative;
+  display: inline-block;
+}
+
+.cta-container {
+  position: relative;
+  display: inline-block;
+}
+
+.cta-btn {
   position: relative;
   padding: 1rem 2.5rem;
   border-radius: 50px;
   background: linear-gradient(270deg, #8c4ce0f6, #8c4ce0da, #8c4ce09c,
    #8c4ce0dc, #8c4ce0ac, #8c4ce0d0, #8b4ce0);
-  background-size: 600% 600%;
-  border: none;
   color: #cccccc;
   font-size: 1.1rem;
   font-weight: 700;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: backgroundFlow 6s ease infinite, fadeIn 1s ease forwards 0.8s;
-  opacity: 0;
-  display: block;
-  margin: 2rem auto 0 auto;
-  z-index: 1;
+  border: none;
+  z-index: 2;
   overflow: hidden;
 }
 
-/* Animação que circula o botão */
-.hero .cta-btn::after {
+/* Linha brilhante animada ao redor do botão */
+.light-line {
   content: "";
   position: absolute;
   top: -3px;
@@ -300,34 +343,37 @@ main {
   right: -3px;
   bottom: -3px;
   border-radius: 50px;
-  background: conic-gradient(
-    from 0deg,
-    #ff9cdb,
-    transparent 25%,
-    #ff9cdb 50%,
-    transparent 75%,
-    #ff9cdb
-  );
-  animation: girarBorda 2.5s linear infinite;
-  z-index: -1;
+  background: linear-gradient(90deg, transparent, #ff9cdb, transparent);
+  z-index: 1;
+  animation: moveLight 2s linear infinite;
+  background-size: 300% 100%;
+  pointer-events: none;
   filter: blur(2px);
 }
 
-/* Gira a borda */
-@keyframes girarBorda {
+/* Animação do brilho escaneando */
+@keyframes moveLight {
   0% {
-    transform: rotate(0deg);
+    background-position: -100% 0;
   }
   100% {
-    transform: rotate(360deg);
+    background-position: 200% 0;
   }
 }
 
-/* Animação do fundo */
-@keyframes backgroundFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes subirDeBaixo {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animarHeroBotao.ativoHero {
+  animation: subirDeBaixo 0.9s ease forwards;
 }
 
 /* Fade-in */
@@ -338,7 +384,7 @@ main {
 }
 
 .hero .cta-btn:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0 0 20px #ff9cdb;
 }
 
