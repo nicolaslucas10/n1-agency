@@ -827,9 +827,10 @@ main {
 .mosaico-item-metodo {
   position: relative;
   background-size: cover;
-  background-position: center;
+  background-position: l;
   height: 350px;
   transition: all 0.4s ease;
+  opacity:1;
 }
 
 .mosaico-item-metodo:hover {
