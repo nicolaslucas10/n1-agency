@@ -61,17 +61,18 @@
   <div class="lines-container" id="linesContainer"></div>
 
   <div class="hero-content content">
-    <h1 class="animarHeroTitulo">
+    <h1 class="animarHeroH1">
       <span class="tranform"></span><br>
       <span id="h101">ESTRATÉGIA, POSICIONAMENTO E</span>  
       <span id="h101">CONVERSÃO</span> PARA QUEM QUER CRESCER DE VERDADE.
     </h1>
 
-    <p class="zoom animarHeroParagrafo">
+    <p class="animarHeroTexto">
       Tenha a maior assessoria de marketing dentro do seu <span id="h101">negócio.</span>
     </p>
 
     <button class="cta-btn animarHeroBotao">QUERO SER O NÚMERO 1</button>
+
   </div>
 </section>
 
@@ -323,6 +324,26 @@
 
 
 
+
+
+<script>
+  function animarHero() {
+    const elementos = document.querySelectorAll('.animarHeroH1, .animarHeroTexto, .animarHeroBotao');
+
+    elementos.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      const visivel = rect.top < window.innerHeight - 100;
+
+      if (visivel) {
+        el.classList.add('ativoHero');
+      }
+      // Não remove a classe ao rolar para cima
+    });
+  }
+
+  window.addEventListener('scroll', animarHero);
+  window.addEventListener('load', animarHero);
+</script>
 
 
 

@@ -253,16 +253,13 @@ main {
       text-align: center;
     }
 
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1.2rem;
-      font-weight: 700;
-      line-height: 1.3;
-      opacity: 0;
-      transform: translateY(30px);
-      animation: slideIn 1s ease forwards 0.3s;
-      color: #cccccc;
-    }
+   .hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #cccccc;
+}
 
     .hero p {
       font-size: 1.3rem;
@@ -274,10 +271,11 @@ main {
     }
 
     .hero .cta-btn {
+  position: relative;
   padding: 1rem 2.5rem;
   border-radius: 50px;
   background: linear-gradient(270deg, #8c4ce0f6, #8c4ce0da, #8c4ce09c,
-   #8c4ce0dc, #8c4ce0ac,#8c4ce0d0,#8b4ce0);
+   #8c4ce0dc, #8c4ce0ac, #8c4ce0d0, #8b4ce0);
   background-size: 600% 600%;
   border: none;
   color: #cccccc;
@@ -287,34 +285,63 @@ main {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: backgroundFlow 6s ease infinite, fadeIn 1s ease forwards 0.8s;
   opacity: 0;
-   display: block;
+  display: block;
   margin: 2rem auto 0 auto;
+  z-index: 1;
+  overflow: hidden;
 }
 
+/* Animação que circula o botão */
+.hero .cta-btn::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 50px;
+  background: conic-gradient(
+    from 0deg,
+    #ff9cdb,
+    transparent 25%,
+    #ff9cdb 50%,
+    transparent 75%,
+    #ff9cdb
+  );
+  animation: girarBorda 2.5s linear infinite;
+  z-index: -1;
+  filter: blur(2px);
+}
+
+/* Gira a borda */
+@keyframes girarBorda {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animação do fundo */
 @keyframes backgroundFlow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
+/* Fade-in */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 
-    .hero .cta-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px #ff9cdb ;
-    }
+.hero .cta-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff9cdb;
+}
 
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
-
-    @keyframes slideIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
 
     @media (max-width: 768px) {
       .hero h1 {
