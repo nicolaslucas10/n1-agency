@@ -193,7 +193,12 @@ main {
   font-size: 1.3rem;
   margin-bottom: 20px;
   font-weight: 400;
+  background: linear-gradient(90deg, #8c4ce0a9, #d49263a8);
+  color: white; /* Cor do texto por cima do fundo */
+  border-radius: 12px;
+  padding: 10px;
 }
+
 
 .sessao-n1 .titulo {
   font-size: 3rem;
