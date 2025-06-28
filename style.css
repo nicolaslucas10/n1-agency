@@ -329,27 +329,29 @@ main {
       }
     }
 
-    /* Animações reutilizáveis */
-.animar-direita,
-.animar-esquerda,
-.animar-baixo {
+/* Animações específicas da seção .hero */
+.animarHeroH1,
+.animarHeroTexto,
+.animarHeroBotao {
   opacity: 0;
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.animar-direita {
+.animarHeroH1 {
   transform: translateX(100px);
 }
-.animar-esquerda {
+
+.animarHeroTexto {
   transform: translateX(-100px);
 }
-.animar-baixo {
+
+.animarHeroBotao {
   transform: translateY(60px);
 }
 
-.animar-direita.ativo,
-.animar-esquerda.ativo,
-.animar-baixo.ativo {
+.animarHeroH1.ativoHero,
+.animarHeroTexto.ativoHero,
+.animarHeroBotao.ativoHero {
   opacity: 1;
   transform: translate(0, 0);
 }
