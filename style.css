@@ -651,9 +651,33 @@ main {
   color: #ff9cdba7;
 }
 
+/* -----------------------------------------------*/
 
+/* Animação da direita */
+.entrar-direita {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 1s ease;
+}
 
+.entrar-direita.animado {
+  opacity: 1;
+  transform: translateX(0);
+}
 
+/* Animação da esquerda */
+.entrar-esquerda {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 1s ease;
+}
+
+.entrar-esquerda.animado {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* -----------------------------------------------*/
 
 
 
@@ -748,88 +772,67 @@ main {
 
 
 
-
-
-
-
-/* resultados */
-.sessao-resultados {
-  padding: 40px 20px 20px;
-  color: #cccccc;
-  margin: 0px;
+/* --- ANIMAÇÕES PERSONALIZADAS PARA .sessao-linha-estrategica --- */
+.linha-estrategica-titulo {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.8s ease;
 }
 
-.titulo-resultados {
-  font-size: 2.5rem;
-  font-weight: 700;
- background: linear-gradient(90deg, #8b4ce0, #d49263);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 1rem;
+.linha-estrategica-subtitulo {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.8s ease 0.2s;
 }
 
-.subtexto-resultados {
-  font-size: 1.2rem;
-  color: #8b4ce0;
+.linha-estrategica-card {
+  opacity: 0;
+  transform: translateY(40px);
 }
 
-.numero-animado {
-  font-weight: 800;
-  color: #d49263;
-  font-size: 2rem;
+.linha-estrategica-card.animado-cascata {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease;
 }
 
-.lista-resultados {
-  list-style: none;
-  padding: 0;
-  margin: 30px 0;
-  font-size: 1.1rem;
-  color: #cccccc;
+/* Animação para todos os cards com delay progressivo */
+
+
+.linha-estrategica-card:nth-child(3) { transition-delay: 0.5s; }
+.linha-estrategica-card:nth-child(4) { transition-delay: 0.65s; }
+.linha-estrategica-card:nth-child(5) { transition-delay: 0.8s; }
+.linha-estrategica-card:nth-child(6) { transition-delay: 0.95s; }
+
+/* Ativação */
+.linha-estrategica-titulo.ativo-linha,
+.linha-estrategica-subtitulo.ativo-linha {
+  opacity: 1;
+  transform: translateX(0);
 }
 
-.lista-resultados li {
-  margin-bottom: 0.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.6rem;
+.linha-estrategica-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: none;
 }
 
-.lista-resultados i.ph {
-  color: #ff9cdb;
-  font-size: 1.3rem;
+/* Aplicar delay só ao adicionar animação */
+.linha-estrategica-card.animado-cascata {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease;
 }
 
-.destaque-texto {
-  font-size: 1.1rem;
-  color: #ff9cdb;
-  line-height: 1.6;
-}
+.linha-estrategica-card.animado-cascata:nth-child(1) { transition-delay: 0.2s; }
+.linha-estrategica-card.animado-cascata:nth-child(2) { transition-delay: 0.35s; }
+.linha-estrategica-card.animado-cascata:nth-child(3) { transition-delay: 0.5s; }
+.linha-estrategica-card.animado-cascata:nth-child(4) { transition-delay: 0.65s; }
+.linha-estrategica-card.animado-cascata:nth-child(5) { transition-delay: 0.8s; }
+.linha-estrategica-card.animado-cascata:nth-child(6) { transition-delay: 0.95s; }
 
-#resulp {
-  color: #cccccc;
-}
 
-@media (max-width: 768px) {
-  .titulo-resultados {
-  font-size: 2.5rem;
-  font-weight: 700;
- background: linear-gradient(90deg, #8b4ce0, #d49263);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 1rem;
-}
 
-.lista-resultados li {
-  margin-bottom: 0.8rem;
-  display: flex;
-  align-items: flex-start;  /* Alinha o ícone no topo */
-  justify-content: flex-start; /* Garante alinhamento à esquerda */
-  gap: 0.6rem;
-  text-align: left;
-}
-
-}
 
 
 
@@ -970,6 +973,39 @@ main {
 }
 }
 
+.entrar-direita {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 1s ease;
+}
+
+.entrar-direita.animado {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.entrar-esquerda {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 1s ease;
+}
+
+.entrar-esquerda.animado {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.entrar-baixo {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease;
+}
+
+.entrar-baixo.animado {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* somos n1 */
 
 .sessao-n1-agencia {
@@ -1037,6 +1073,29 @@ main {
   }
 }
 
+.entrar-direita {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.9s ease;
+}
+
+.entrar-direita.animado {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.entrar-esquerda {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.9s ease;
+}
+
+.entrar-esquerda.animado {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
 
 /* whatsap */
 
@@ -1059,7 +1118,7 @@ main {
       background: linear-gradient(90deg, #8b4ce0, #d49263);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 10px;
     font-weight: 700;
   }
@@ -1087,7 +1146,7 @@ main {
   }
 
   .formulario-whatsapp button {
-     background: linear-gradient(90deg,  #8c4ce0f6, #8c4ce0da, #8c4ce09c,  #8c4ce0dc, #8c4ce0ac,#8c4ce0d0,#8b4ce0);
+    background: linear-gradient(90deg,  #8c4ce0f6, #8c4ce0da, #8c4ce09c,  #8c4ce0dc, #8c4ce0ac,#8c4ce0d0,#8b4ce0);
     border: none;
     color: white;
     padding: 12px 30px;
@@ -1098,8 +1157,46 @@ main {
   }
 
   .formulario-whatsapp button:hover {
-     background: linear-gradient(90deg,  #8c4ce04c, #8c4ce054, #8c4ce046,  #8c4ce058, #8c4ce045,#8c4ce05a,#8c4ce050);
+    background: linear-gradient(90deg,  #8c4ce04c, #8c4ce054, #8c4ce046,  #8c4ce058, #8c4ce045,#8c4ce05a,#8c4ce050);
   }
+
+  @media (max-width: 768px) {
+    .titulo-formulario {
+      background: linear-gradient(90deg, #8b4ce0, #d49263);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  }
+
+  .animar-direita,
+.animar-esquerda,
+.animar-baixo {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animar-direita {
+  transform: translateX(100px);
+}
+.animar-esquerda {
+  transform: translateX(-100px);
+}
+.animar-baixo {
+  transform: translateY(60px);
+}
+
+.animar-direita.ativo,
+.animar-esquerda.ativo,
+.animar-baixo.ativo {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+
+
 
   .footer {
   color: #ff9cdb;
