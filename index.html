@@ -57,17 +57,24 @@
 
 
 
- <section class="hero animated-background">
-   <div class="lines-container" id="linesContainer"></div>
-    <div class="hero-content content">
-      <h1><spam class="tranform"></spam><br><spam id="h101">ESTRATÉGIA, POSICIONAMENTO E</spam>  <spam id="h101">CONVERSÃO</spam> PARA QUEM QUER CRESCER DE VERDADE.</h1>
-      <p class="zoom">
-  Tenha a maior assessoria de marketing dentro do seu <span id="h101">negócio.</span>
-</p>
+<section class="hero animated-background">
+  <div class="lines-container" id="linesContainer"></div>
 
-      <button class="cta-btn">QUERO SER O NÚMERO 1</button>
-    </div>
-  </section>
+  <div class="hero-content content">
+    <h1 class="animar-direita">
+      <spam class="tranform"></spam><br>
+      <spam id="h101">ESTRATÉGIA, POSICIONAMENTO E</spam>
+      <spam id="h101">CONVERSÃO</spam> PARA QUEM QUER CRESCER DE VERDADE.
+    </h1>
+
+    <p class="zoom animar-esquerda">
+      Tenha a maior assessoria de marketing dentro do seu <span id="h101">negócio.</span>
+    </p>
+
+    <button class="cta-btn animar-baixo">QUERO SER O NÚMERO 1</button>
+  </div>
+</section>
+
 
 <section class="sessao-n1" id="sessao-n1">
   <div class="container">
@@ -303,6 +310,80 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- NEWWWWWWWWWWWWWW JAVA-SCRIPTTTTTTTTTTTTT-->
+
+
+
+
+
+
+
+
+
+<script>
+  function animarScroll() {
+    const elementos = document.querySelectorAll('.animar-direita, .animar-esquerda, .animar-baixo');
+    const topo = window.innerHeight * 0.85;
+
+    elementos.forEach(el => {
+      const posicao = el.getBoundingClientRect().top;
+
+      if (posicao < topo && posicao > 0) {
+        el.classList.add('ativo');
+      } else {
+        el.classList.remove('ativo');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', animarScroll);
+  window.addEventListener('load', animarScroll);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script>
     const toggle = document.getElementById('menu-toggle');
 const nav = document.getElementById('nav');
@@ -346,20 +427,6 @@ toggle.addEventListener('click', () => {
   }, 1500);
 </script>
 
-<script>
-  function animarAoRolar() {
-    const box = document.querySelector('.container-atuacao');
-    const topo = box.getBoundingClientRect().top;
-    const janela = window.innerHeight;
-
-    if (topo < janela * 0.85) {
-      box.classList.add('animado');
-    }
-  }
-
-  window.addEventListener('scroll', animarAoRolar);
-  window.addEventListener('load', animarAoRolar);
-</script>
 
 <script>
   function animarCardsAoRolar() {

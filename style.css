@@ -329,6 +329,31 @@ main {
       }
     }
 
+    /* Animações reutilizáveis */
+.animar-direita,
+.animar-esquerda,
+.animar-baixo {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animar-direita {
+  transform: translateX(100px);
+}
+.animar-esquerda {
+  transform: translateX(-100px);
+}
+.animar-baixo {
+  transform: translateY(60px);
+}
+
+.animar-direita.ativo,
+.animar-esquerda.ativo,
+.animar-baixo.ativo {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 
 /* sessão n1 */
 .sessao-n1 {
