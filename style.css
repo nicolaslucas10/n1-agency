@@ -30,6 +30,7 @@ header {
   align-items: center;
   max-width: 1440px;
   margin: 0 auto;
+   position: relative;
 }
 
 .logo img {
@@ -51,7 +52,7 @@ header {
   color: #cccccc;
   background: linear-gradient(90deg,  #8c4ce0f6, #8c4ce0da, #8c4ce09c,  #8c4ce0dc, #8c4ce0ac,#8c4ce0d0,#8b4ce0);
   border: none;
-  padding: 0.7rem 1.8rem;
+  padding: 0.6rem 1.6rem;
   border-radius: 50px;
   font-weight: bold;
   text-decoration: none;
@@ -83,9 +84,10 @@ header {
 }
 
 .whatsapp-container {
-  position: relative;
-  display: inline-block;
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
 
