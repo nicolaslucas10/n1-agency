@@ -210,7 +210,7 @@ header {
 
 /* MENU HAMBÚRGUER */
 .menu-button {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
@@ -280,6 +280,12 @@ main {
   .whatsapp-btn {
     display: none;
   }
+  .menu-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
 }
 
 /* RESPONSIVO DESKTOP */
