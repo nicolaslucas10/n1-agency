@@ -12,6 +12,8 @@ body {
       color: white;
       background: linear-gradient(to right,  #000000 , #000000);
       overflow-x: hidden;
+      border: none;
+  outline: none;
     }
 
 header {
@@ -1341,18 +1343,29 @@ main {
 
 .footer-icons {
   margin-bottom: 20px;
+  ;
 }
 
 .footer-icons a {
-  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;          /* aumentado */
+  height: 52px;         /* aumentado */
   margin: 0 10px;
-  font-size: 28px;
-  transition: color 0.3s;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #000000;
+  font-size: 26px;      /* aumentado o ícone */
+  transition: background-color 0.3s, transform 0.3s;
 }
 
+
 .footer-icons a:hover {
-  color: #ff9cdbb6;
+  background-color: #ff9cdbb6; /* muda a cor do fundo no hover */
+  transform: scale(1.05);      /* efeito de leve crescimento */
 }
+
 
 .footer-info p {
   margin: 5px 0;
