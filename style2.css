@@ -868,18 +868,29 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
 
 .footer-icons {
   margin-bottom: 20px;
+  ;
 }
 
 .footer-icons a {
-  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
   margin: 0 10px;
-  font-size: 28px;
-  transition: color 0.3s;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #000000;
+  font-size: 26px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
 }
 
 .footer-icons a:hover {
-  color: #ff9cdbb6;
+  background-color: #ff9cdbb6;
+  transform: scale(1.05);
 }
+
 
 .footer-info p {
   margin: 5px 0;

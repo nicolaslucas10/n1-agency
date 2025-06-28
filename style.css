@@ -13,8 +13,28 @@ body {
       background: linear-gradient(to right,  #000000 , #000000);
       overflow-x: hidden;
       border: none;
-  outline: none;
+  outline: none; 
     }
+   * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none !important;
+  outline: none !important;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  border: none !important;
+  outline: none !important;
+  background-color: #000;
+}
+
+:focus {
+  outline: none !important;
+}
+
 
 header {
   background: linear-gradient(to right,  #000000 , #000000 );
@@ -1350,20 +1370,20 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 52px;          /* aumentado */
-  height: 52px;         /* aumentado */
+  width: 60px;
+  height: 60px;
   margin: 0 10px;
   background-color: #ffffff;
   border-radius: 50%;
   color: #000000;
-  font-size: 26px;      /* aumentado o ícone */
+  font-size: 26px;
   transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
 }
 
-
 .footer-icons a:hover {
-  background-color: #ff9cdbb6; /* muda a cor do fundo no hover */
-  transform: scale(1.05);      /* efeito de leve crescimento */
+  background-color: #ff9cdbb6;
+  transform: scale(1.05);
 }
 
 
