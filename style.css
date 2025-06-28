@@ -1235,6 +1235,54 @@ main {
     background: linear-gradient(90deg,  #8c4ce04c, #8c4ce054, #8c4ce046,  #8c4ce058, #8c4ce045,#8c4ce05a,#8c4ce050);
   }
 
+  .botao-container-brilhante {
+  position: relative;
+  display: inline-block;
+}
+
+.animar-baixo {
+  background: linear-gradient(90deg, #8c4ce0f6, #8c4ce0da, #8c4ce09c,
+   #8c4ce0dc, #8c4ce0ac, #8c4ce0d0, #8b4ce0);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+  transition: 0.3s;
+}
+
+.light-line-form {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, transparent, #ff9cdb, transparent);
+  background-size: 300% 100%;
+  animation: moveLightForm 2s linear infinite;
+  filter: blur(2px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Animação da luz brilhante contornando */
+@keyframes moveLightForm {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+
   @media (max-width: 768px) {
     .titulo-formulario {
       background: linear-gradient(90deg, #8b4ce0, #d49263);
