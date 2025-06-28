@@ -10,12 +10,12 @@
 body {
       font-family: 'Rajdhani', sans-serif;
       color: white;
-      background: linear-gradient(to right,  #181818 , #282036);
+      background: linear-gradient(to right,  #000000 , #000000);
       overflow-x: hidden;
     }
 
 header {
-  background: linear-gradient(to right,  #181818 , #282036 );
+  background: linear-gradient(to right,  #000000 , #000000 );
   padding: 1rem 2rem;
   position: fixed;
   width: 100%;
@@ -172,7 +172,7 @@ main {
 .animated-background {
   position: relative;
   height: 100vh;
-  background: linear-gradient(to right, #181818, #282036);
+  background: linear-gradient(to right, #000000, #000000);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -1033,7 +1033,7 @@ main {
   }
 
   .formulario-whatsapp button {
-    background: #ff9cdb;
+     background: linear-gradient(90deg,  #8c4ce0f6, #8c4ce0da, #8c4ce09c,  #8c4ce0dc, #8c4ce0ac,#8c4ce0d0,#8b4ce0);
     border: none;
     color: white;
     padding: 12px 30px;
@@ -1044,7 +1044,7 @@ main {
   }
 
   .formulario-whatsapp button:hover {
-    background: #ff9cdb9c;
+     background: linear-gradient(90deg,  #8c4ce04c, #8c4ce054, #8c4ce046,  #8c4ce058, #8c4ce045,#8c4ce05a,#8c4ce050);
   }
 
   .footer {
