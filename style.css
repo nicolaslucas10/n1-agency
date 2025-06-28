@@ -98,6 +98,9 @@ header {
   box-shadow: 0 0 0px #8b4ce0;
   transition: all 0.3s ease;
   animation: pulseGlow 2s infinite;
+  position: relative;
+  z-index: 2;
+  overflow: hidden; /* importante para esconder o brilho fora do botão */
 }
 
 .whatsapp-btn:hover {
@@ -119,13 +122,65 @@ header {
 }
 
 .whatsapp-container {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-left: auto;
   z-index: 10;
 }
 
 
+
+
+.light-line-wpp {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, transparent, #ff9cdb, transparent);
+  background-size: 300% 100%;
+  animation: moveLightWpp 2s linear infinite;
+  filter: blur(2px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+/* Aumenta o z-index do botão pra ficar acima da linha */
+.whatsapp-btn {
+  position: relative;
+  z-index: 2;
+}
+
+.whatsapp-container {
+  margin-left: auto;
+  position: relative; /* ESSENCIAL para conter o brilho */
+  z-index: 10;
+  display: inline-block;
+}
+
+.whatsapp-btn {
+  color: #cccccc;
+  background: linear-gradient(90deg,  #8c4ce0f6, #8c4ce0da, #8c4ce09c,  #8c4ce0dc, #8c4ce0ac,#8c4ce0d0,#8b4ce0);
+  border: none;
+  padding: 0.6rem 1.6rem;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  box-shadow: 0 0 0px #8b4ce0;
+  transition: all 0.3s ease;
+  animation: pulseGlow 2s infinite;
+  position: relative; /* Para que o botão fique acima do brilho */
+  z-index: 2;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #8b4ce0;
+}
 
 .light-line-wpp {
   content: "";
@@ -141,12 +196,6 @@ header {
   filter: blur(2px);
   z-index: 1;
   pointer-events: none;
-}
-
-/* Aumenta o z-index do botão pra ficar acima da linha */
-.whatsapp-btn {
-  position: relative;
-  z-index: 2;
 }
 
 @keyframes moveLightWpp {
