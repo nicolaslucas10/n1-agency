@@ -890,8 +890,8 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
 }
 
 .footer-logo img {
-  max-height: 50px;
-  margin-bottom: 20px;
+  max-height: 150px;
+  margin-bottom: 10px;
 }
 
 .footer-icons {
@@ -953,6 +953,6 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   }
 
   .footer-logo img {
-    max-height: 30px;
+    max-height: 110px;
   }
 }
