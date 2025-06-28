@@ -26,11 +26,9 @@
 </head>
 
 <body>
-    <!-- Preloader -->
-<div id="preloader">
+  <div id="preloader">
   <div class="loader"></div>
 </div>
-
 <header>
   <div class="nav-container">
     
@@ -208,6 +206,17 @@
 </footer>
 
 
+
+
+
+<script>
+  window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.opacity = "0";
+    preloader.style.pointerEvents = "none";
+    setTimeout(() => preloader.style.display = "none", 1000);
+  });
+</script>
 
 
 <script>
