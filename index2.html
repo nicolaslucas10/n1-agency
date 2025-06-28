@@ -58,12 +58,12 @@
   <div id="linesContainer" class="lines-container"></div>
 
   <div class="conteudo-n1">
-    <p class="subtitulo">Não é só anúncio. É consultoria exclusiva com o nosso método personalizado N1.</p>
-    <h2 class="titulo">
+    <p class="subtitulo animar-cima">Não é só anúncio. É consultoria exclusiva com o nosso método personalizado N1.</p>
+    <h2 class="titulo animar-direita">
       O NOSSO <span class="destaque">TRÁFEGO PREMIUM</span> É EXCLUSIVO,
       FEITO SOB MEDIDA PARA QUEM QUER VENDER MAIS COM <span class="destaque">PREVISIBILIDADE</span>.
     </h2>
-    <p class="descricao">
+    <p class="descricao animar-baixo">
       Na Seja N1, tráfego pago não é impulsionar por impulso. É estudar o público,<br>
       Testar o que funciona e colocar sua marca no lugar certo, na hora certa,<br> com a mensagem certa.
     </p>
@@ -71,9 +71,10 @@
 </section>
 
 
+
 <section class="linha-do-tempo">
-  <h2 class="titulo-linha">INÍCIO DA IMPLEMENTAÇÃO DO PROJETO</h2>
-  <div class="linha">
+  <h2 class="titulo-linha scroll-animar from-right">INÍCIO DA IMPLEMENTAÇÃO DO PROJETO</h2>
+  <div class="linha  scroll-animar from-bottom">
     <div class="item">
       <p class="texto">Assinatura do contrato</p>
       <span class="ponto"></span>
@@ -105,50 +106,56 @@
 
 
 <section class="como-funciona">
-  <h2 class="como-titulo"><span>COMO FUNCIONA?</span></h2>
-  <h3 class="subtitulo-funciona">Exclusividade de verdade</h3>
-<br>
-  <div class="cards">
-    <div class="card">
-      <div class="numero">1</div>
-      <p>Estruturamos seu negócio para se diferenciar no mercado e atrair bons clientes.</p>
-    </div>
-    <div class="card">
-      <div class="numero">2</div>
-      <p>Implementamos processos comerciais para melhorar o seu atendimento e conversão.</p>
-    </div>
-    <div class="card">
-      <div class="numero">3</div>
-      <p>Executamos as melhores estratégias de anúncios no mercado para conseguir leads qualificados.</p>
-    </div>
-    <div class="card">
-      <div class="numero">4</div>
-      <p>Analisamos as métricas necessárias para melhorar o seu desempenho de vendas através do digital.</p>
-    </div>
-  </div><br>
-  <p class="descricao-funciona">
-  Suporte <strong>diariamente</strong>, porque performance exige foco.<br>
-  E aqui, você é o número 1.
-</p>
+  <h2 class="como-titulo animar-direita"><span>COMO FUNCIONA?</span></h2>
+  <h3 class="subtitulo-funciona animar-direita">Exclusividade de verdade</h3>
+  <br>
 
+<div class="cards">
+  <div class="card animar-card" data-delay="0">
+    <div class="numero">1</div>
+    <p>Estruturamos seu negócio para se diferenciar no mercado e atrair bons clientes.</p>
+  </div>
+  <div class="card animar-card" data-delay="100">
+    <div class="numero">2</div>
+    <p>Implementamos processos comerciais para melhorar o seu atendimento e conversão.</p>
+  </div>
+  <div class="card animar-card" data-delay="200">
+    <div class="numero">3</div>
+    <p>Executamos as melhores estratégias de anúncios no mercado para conseguir leads qualificados.</p>
+  </div>
+  <div class="card animar-card" data-delay="300">
+    <div class="numero">4</div>
+    <p>Analisamos as métricas necessárias para melhorar o seu desempenho de vendas através do digital.</p>
+  </div>
+</div>
+
+
+  <br>
+
+  <p class="descricao-funciona animar-baixo">
+    Suporte <strong>diariamente</strong>, porque performance exige foco.<br>
+    E aqui, você é o número 1.
+  </p>
 </section>
+
 
 
 
 
 <section class="formulario-whatsapp" id="contato">
   <div class="container">
-    <h1 class="titulo-formulario">VAMOS DAR O PRÓXIMO PASSO?</h1>
-    <p class="subtitulo-formulario">Compartilhe essas 3 informações e daremos início ao seu atendimento personalizado.</p>
-    <form onsubmit="enviarWhatsApp(); return false;">
+    <h1 class="titulo-formulario animar-direita">VAMOS DAR O PRÓXIMO PASSO?</h1>
+    <p class="subtitulo-formulario animar-direita">Compartilhe essas 3 informações e daremos início ao seu atendimento personalizado.</p>
+
+    <form class="animar-esquerda" onsubmit="enviarWhatsApp(); return false;">
       <input type="text" id="nome" placeholder="Seu nome" required>
       <input type="text" id="servico" placeholder="Sua empresa" required>
       <textarea id="mensagem" placeholder="WhatsApp"></textarea>
-      <button type="submit" style="background-color: ; color: white; padding: 0.8rem 1.5rem; border: none; border-radius:  font-weight: display: inline-flex; align-items: center;">
-  Iniciar Conversa
-  <i class="ph ph-whatsapp-logo" style="margin-left: 8px;"></i>
-</button>
-
+      
+      <button type="submit" class="animar-baixo" style="color: white; padding: 0.8rem 1.5rem; border: none; border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center;">
+        Iniciar Conversa
+        <i class="ph ph-whatsapp-logo" style="margin-left: 8px;"></i>
+      </button>
     </form>
   </div>
 </section>
@@ -274,28 +281,93 @@ toggle.addEventListener('click', () => {
 </script>
 
 
-<script>
-  const cards = document.querySelectorAll('.card');
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = 1;
-        entry.target.style.transform = 'translateY(0)';
+
+
+<script>
+  function animarScroll() {
+    const elementos = document.querySelectorAll('.scroll-animar');
+    const topoTela = window.innerHeight * 0.85;
+
+    elementos.forEach(el => {
+      const posicao = el.getBoundingClientRect().top;
+
+      if (posicao < topoTela && posicao > 0) {
+        el.classList.add('ativo');
+      } else {
+        el.classList.remove('ativo');
       }
     });
-  }, {
-    threshold: 0.2
-  });
+  }
 
-  cards.forEach(card => {
-    card.style.opacity = 0;
-    card.style.transform = 'translateY(40px)';
-    observer.observe(card);
-  });
+  window.addEventListener('scroll', animarScroll);
+  window.addEventListener('load', animarScroll);
 </script>
 
 
+<script>
+  function animarElementos() {
+    const elementos = document.querySelectorAll('.animar-direita, .animar-cima, .animar-baixo');
+    const topoTela = window.innerHeight * 0.85;
+
+    elementos.forEach(el => {
+      const posicao = el.getBoundingClientRect().top;
+
+      if (posicao < topoTela && posicao > 0) {
+        el.classList.add('ativo');
+      } else {
+        el.classList.remove('ativo');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', animarElementos);
+  window.addEventListener('load', animarElementos);
+</script>
+
+<script>
+  function animarScroll() {
+    const cards = document.querySelectorAll('.animar-card');
+    const trigger = window.innerHeight * 0.85;
+
+    cards.forEach(card => {
+      const top = card.getBoundingClientRect().top;
+      const delay = card.getAttribute('data-delay') || 0;
+
+      if (top < trigger && top > 0) {
+        card.style.transitionDelay = `${delay}ms`;
+        card.classList.add('ativo');
+      } else {
+        card.classList.remove('ativo');
+        card.style.transitionDelay = '0ms';
+      }
+    });
+  }
+
+  window.addEventListener('scroll', animarScroll);
+  window.addEventListener('load', animarScroll);
+</script>
+
+
+<script>
+  function animarScroll() {
+    const elementos = document.querySelectorAll('.animar-direita, .animar-esquerda, .animar-baixo');
+    const topoTela = window.innerHeight * 0.85;
+
+    elementos.forEach(el => {
+      const posicao = el.getBoundingClientRect().top;
+
+      if (posicao < topoTela && posicao > 0) {
+        el.classList.add('ativo');
+      } else {
+        el.classList.remove('ativo');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', animarScroll);
+  window.addEventListener('load', animarScroll);
+</script>
 
 
 </body>

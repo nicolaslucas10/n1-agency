@@ -292,6 +292,31 @@ main {
   z-index: 2;
 }
 
+/* Animações individuais */
+.animar-direita, .animar-cima, .animar-baixo {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animar-direita {
+  transform: translateX(100px);
+}
+
+.animar-cima {
+  transform: translateY(-60px);
+}
+
+.animar-baixo {
+  transform: translateY(60px);
+}
+
+.animar-direita.ativo,
+.animar-cima.ativo,
+.animar-baixo.ativo {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 
 /* sessao linha trempo */
 
@@ -513,6 +538,23 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   transform: translateY(0);
 }
 
+/* Animações direcionais */
+.scroll-animar.from-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-animar.from-bottom {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-animar.ativo {
+  opacity: 1;
+  transform: translate(0, 0);
+}
 
 
 /* como funciona */
@@ -618,6 +660,40 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
 
 
 
+.animar-esquerda,
+.animar-direita,
+.animar-baixo {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animar-esquerda {
+  transform: translateX(-100px);
+}
+
+.animar-direita {
+  transform: translateX(100px);
+}
+
+.animar-baixo {
+  transform: translateY(60px);
+}
+
+.ativo {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.animar-card {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animar-card.ativo {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 /* whatsap */
 
@@ -668,7 +744,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   }
 
   .formulario-whatsapp button {
-    background: #ff9cdb;
+    background: linear-gradient(90deg,  #8c4ce0f6, #8c4ce0da, #8c4ce09c,  #8c4ce0dc, #8c4ce0ac,#8c4ce0d0,#8b4ce0);
     border: none;
     color: white;
     padding: 12px 30px;
@@ -679,7 +755,7 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
   }
 
   .formulario-whatsapp button:hover {
-    background: #ff9cdb9c;
+    background: linear-gradient(90deg,  #8c4ce04c, #8c4ce054, #8c4ce046,  #8c4ce058, #8c4ce045,#8c4ce05a,#8c4ce050);
   }
 
   @media (max-width: 768px) {
@@ -692,6 +768,30 @@ background: linear-gradient(90deg, #8b4ce0, #d49263);
     font-weight: 700;
   }
   }
+
+  .animar-direita,
+.animar-esquerda,
+.animar-baixo {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animar-direita {
+  transform: translateX(100px);
+}
+.animar-esquerda {
+  transform: translateX(-100px);
+}
+.animar-baixo {
+  transform: translateY(60px);
+}
+
+.animar-direita.ativo,
+.animar-esquerda.ativo,
+.animar-baixo.ativo {
+  opacity: 1;
+  transform: translate(0, 0);
+}
 
 /* footer */
 
