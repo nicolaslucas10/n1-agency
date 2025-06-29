@@ -278,13 +278,33 @@ main {
 
 @media (max-width: 768px) {
   .whatsapp-btn {
-    display: none;
-  }
+  color: #cccccc;
+  background: linear-gradient(90deg,  #8c4ce0f6, #8c4ce0da, #8c4ce09c,  #8c4ce0dc, #8c4ce0ac,#8c4ce0d0,#8b4ce0);
+  border: none;
+  padding: 0.7rem 1.6rem;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.5rem;
+  box-shadow: 0 0 0px #8b4ce0;
+  transition: all 0.3s ease;
+  animation: pulseGlow 2s infinite;
+  position: relative; /* Para que o botão fique acima do brilho */
+  z-index: 2;
+}
   .menu-button {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+}
+.logo img {
+  height: 18px; /* ajuste conforme necessário */
+  width: auto;
+  display: block;
 }
 }
 

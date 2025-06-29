@@ -182,6 +182,11 @@ main {
   .whatsapp-btn {
     display: none;
   }
+  .logo img {
+  height: 18px; /* ajuste conforme necessário */
+  width: auto;
+  display: block;
+}
 }
 
 /* RESPONSIVO DESKTOP */
