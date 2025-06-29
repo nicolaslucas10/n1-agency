@@ -1086,8 +1086,7 @@ main {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* escurece a imagem */
-  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* mantém o fundo escurecido */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1095,8 +1094,9 @@ main {
   text-align: center;
   color: #ffffff;
   padding: 20px;
-  transition: opacity 0.3s ease;
+  opacity: 1; /* <- sempre visível */
 }
+
 
 .mosaico-item-metodo:hover .overlay-mosaico {
   opacity: 1;
