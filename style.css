@@ -1086,16 +1086,17 @@ main {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* mantém o fundo escurecido */
+  background-color: rgba(0, 0, 0, 0.5); /* fundo escuro fixo */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* alinha os itens no topo */
   align-items: center;
   text-align: center;
   color: #ffffff;
   padding: 20px;
-  opacity: 1; /* <- sempre visível */
+  opacity: 1; /* visível sempre */
 }
+
 
 
 .mosaico-item-metodo:hover .overlay-mosaico {
@@ -1110,13 +1111,19 @@ main {
   background: linear-gradient(90deg, #8b4ce0, #d49263);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  height: 50px; /* força altura igual para todos os h3 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .overlay-mosaico p {
   font-size: 0.95rem;
   line-height: 1.5;
   color: #cccccc;
+  min-height: 100px; /* ajusta conforme o conteúdo médio */
 }
+
 
 /* Responsivo */
 @media (max-width: 1024px) {
