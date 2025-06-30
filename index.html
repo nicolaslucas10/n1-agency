@@ -384,6 +384,10 @@
 
 
 
+<!-- Seta flutuante -->
+<button id="btnTopo" title="Voltar ao topo">
+  <i class="bi bi-arrow-up"></i>
+</button>
 
 
 
@@ -640,6 +644,25 @@
 
 
 
+<script>
+  // Mostrar/esconder botão ao rolar
+  window.addEventListener("scroll", function () {
+    const btn = document.getElementById("btnTopo");
+    if (window.scrollY > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  });
+
+  // Voltar ao topo suavemente
+  document.getElementById("btnTopo").addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
 
 
 
