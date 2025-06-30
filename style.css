@@ -1377,6 +1377,9 @@ main {
   line-height: 1.4;
 }
 
+#br1{
+    display: none;
+  }
 .bloco-negativo i {
   color: #e05252;
   font-size: 1.2rem;
@@ -1404,8 +1407,8 @@ main {
     flex: 1 1 100%;
   }
 
-  .brsessao{
-    display: none;
+  #br1{
+    display: flex;
   }
 
 }
