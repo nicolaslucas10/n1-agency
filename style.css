@@ -1410,7 +1410,9 @@ main {
   #br1{
     display: flex;
   }
-
+#tittle12{
+  display: none;
+}
 }
 
 
