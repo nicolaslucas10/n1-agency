@@ -151,6 +151,42 @@
 </section>
 
 
+<section class="sessao-consultoria">
+  <div class="consultoria-container">
+    <h2 class="consultoria-titulo entrar-direita">POR QUE A CONSULTORIA GRATUITA DA N1 <br id="tittle12"> É INDISPENSÁVEL?</h2>
+    <p class="consultoria-subtitulo entrar-esquerda">
+      <spam id="subagencia">
+        Porque decisões inteligentes começam com clareza <br id="br1">
+        E clareza só vem com análise, visão e profundidade.
+      </spam><br id="br2">
+      Enquanto muitos negócios investem em fórmulas prontas e promessas vazias, a SEJA N1 oferece<br id="brsessao"> o primeiro passo para mudar esse jogo: uma<br id="br1"> análise real do seu cenário atual com estratégia,<br id="brsessao"> inteligência e visão de crescimento.
+    </p>
+
+    <div class="blocos-consultoria">
+      <div class="bloco-negativo">
+        <h3 class="titulo-bloco">O que você está acostumado<br id="title11"> a ver por aí:</h3>
+        <ul>
+          <li><i class="bi bi-x-circle-fill"></i> Agências que só entregam arte bonita, sem pensar em conversão.</li>
+          <li><i class="bi bi-x-circle-fill"></i> Planejamentos genéricos, sem considerar seu momento ou segmento.</li>
+          <li><i class="bi bi-x-circle-fill"></i> Foco em métricas de vaidade (curtidas, seguidores), não em vendas.</li>
+          <li><i class="bi bi-x-circle-fill"></i> Falta de clareza no que está sendo feito e por que está sendo feito.</li>
+          <li><i class="bi bi-x-circle-fill"></i> Zero análise, zero estratégia, zero resultado.</li>
+        </ul>
+      </div>
+
+      <div class="bloco-positivo">
+        <h3 class="titulo-bloco">O QUE VOCÊ ENCONTRA NA SESSÃO ESTRATÉGICA GRATUITA DA SEJA N1:</h3>
+        <ul>
+          <li><i class="bi bi-check-circle-fill"></i> Um diagnóstico claro dos gargalos que estão impedindo seu negócio de crescer.</li>
+          <li><i class="bi bi-check-circle-fill"></i> Análise personalizada do seu posicionamento, presença e proposta de valor.</li>
+          <li><i class="bi bi-check-circle-fill"></i> Direção estratégica real, com foco em demanda, autoridade e conversão.</li>
+          <li><i class="bi bi-check-circle-fill"></i> Um time que entende de marca, funil, performance e vendas.</li>
+          <li><i class="bi bi-check-circle-fill"></i> Clareza total para você decidir os próximos passos com segurança.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -208,6 +244,84 @@
 </footer>
 
 
+
+
+
+<!-- Seta flutuante -->
+<button id="btnTopo" title="Voltar ao topo">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+
+
+
+
+
+
+
+
+<script>
+  // Mostrar/esconder botão ao rolar
+  window.addEventListener("scroll", function () {
+    const btn = document.getElementById("btnTopo");
+    if (window.scrollY > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  });
+
+  // Voltar ao topo suavemente
+  document.getElementById("btnTopo").addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+
+
+
+<script>
+  function animarAoRolar() {
+    const container = document.querySelector('.consultoria-container');
+    const titulo = document.querySelector('.consultoria-titulo');
+    const subtitulo = document.querySelector('.consultoria-subtitulo');
+
+    const alturaTela = window.innerHeight;
+    const topoContainer = container.getBoundingClientRect().top;
+    const fundoContainer = container.getBoundingClientRect().bottom;
+
+    // Ativa se estiver visível na tela
+    if (topoContainer < alturaTela - 100 && fundoContainer > 100) {
+      container.classList.add('animado');
+      titulo.classList.add('ativo');
+      subtitulo.classList.add('ativo');
+    } else {
+      // Remove classes se sair da viewport
+      container.classList.remove('animado');
+      titulo.classList.remove('ativo');
+      subtitulo.classList.remove('ativo');
+    }
+  }
+
+  window.addEventListener('scroll', animarAoRolar);
+  window.addEventListener('load', animarAoRolar);
+</script>
+
+
+
+
+
+<script>
+  window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.opacity = "0";
+    preloader.style.pointerEvents = "none";
+    setTimeout(() => preloader.style.display = "none", 1000);
+  });
+</script>
 <script>
   window.addEventListener("load", function () {
     const preloader = document.getElementById("preloader");
@@ -411,6 +525,7 @@ toggle.addEventListener('click', () => {
   window.addEventListener('scroll', animarScroll);
   window.addEventListener('load', animarScroll);
 </script>
+
 
 
 
